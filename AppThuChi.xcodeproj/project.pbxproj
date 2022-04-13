@@ -1,0 +1,665 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FA3FA0262684884E6FD0640 /* Pods_AppThuChi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E267F9EB9DE62BBD970540EA /* Pods_AppThuChi.framework */; };
+		3A13009527F71B8200B856D7 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A13009427F71B8200B856D7 /* Popup.swift */; };
+		3A13009727F72FF800B856D7 /* Popup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A13009627F72FF800B856D7 /* Popup.xib */; };
+		3A5C4FEF28067B0600F69D24 /* inComeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C4FED28067B0600F69D24 /* inComeCollectionViewCell.swift */; };
+		3A5C4FF028067B0600F69D24 /* inComeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C4FEE28067B0600F69D24 /* inComeCollectionViewCell.xib */; };
+		3A5EEF3D27F55F2900F9ECBF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EEF3B27F55F2900F9ECBF /* CollectionViewCell.swift */; };
+		3A5EEF3E27F55F2900F9ECBF /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A5EEF3C27F55F2900F9ECBF /* CollectionViewCell.xib */; };
+		3A65AA3527FD436B0022476B /* PlanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A65AA3327FD436B0022476B /* PlanningViewController.swift */; };
+		3A65AA3627FD436B0022476B /* PlanningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A65AA3427FD436B0022476B /* PlanningViewController.xib */; };
+		3A65AA3927FD43990022476B /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A65AA3727FD43990022476B /* ReportViewController.swift */; };
+		3A65AA3A27FD43990022476B /* ReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A65AA3827FD43990022476B /* ReportViewController.xib */; };
+		3A65AA3D27FD47710022476B /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A65AA3B27FD47710022476B /* BottomSheetViewController.swift */; };
+		3A65AA3E27FD47710022476B /* BottomSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A65AA3C27FD47710022476B /* BottomSheetViewController.xib */; };
+		3A65AA4327FD48330022476B /* SpendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A65AA4127FD48330022476B /* SpendViewController.swift */; };
+		3A65AA4427FD48330022476B /* SpendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A65AA4227FD48330022476B /* SpendViewController.xib */; };
+		3A65AA4727FD48470022476B /* InComeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A65AA4527FD48470022476B /* InComeViewController.swift */; };
+		3A65AA4827FD48470022476B /* InComeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A65AA4627FD48470022476B /* InComeViewController.xib */; };
+		3A7256E127F499F9006944D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7256E027F499F9006944D7 /* AppDelegate.swift */; };
+		3A7256E327F499F9006944D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7256E227F499F9006944D7 /* SceneDelegate.swift */; };
+		3A7256E527F499F9006944D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7256E427F499F9006944D7 /* ViewController.swift */; };
+		3A7256E827F499F9006944D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7256E627F499F9006944D7 /* Main.storyboard */; };
+		3A7256EA27F499FC006944D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A7256E927F499FC006944D7 /* Assets.xcassets */; };
+		3A7256ED27F499FC006944D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7256EB27F499FC006944D7 /* LaunchScreen.storyboard */; };
+		3A72570527F4BEF0006944D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A72570427F4BEF0006944D7 /* GoogleService-Info.plist */; };
+		3A72575927F4DC19006944D7 /* TPKeyboardAvoidingSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A72575827F4DC19006944D7 /* TPKeyboardAvoidingSwift.swift */; };
+		3A72575D27F4DD46006944D7 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A72575C27F4DD46006944D7 /* FirebaseAuthManager.swift */; };
+		3A72576027F4DDED006944D7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A72575E27F4DDED006944D7 /* LoginViewController.swift */; };
+		3A72576127F4DDED006944D7 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A72575F27F4DDED006944D7 /* LoginViewController.xib */; };
+		3A72576427F4E5B4006944D7 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A72576227F4E5B4006944D7 /* RegisterViewController.swift */; };
+		3A72576527F4E5B4006944D7 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A72576327F4E5B4006944D7 /* RegisterViewController.xib */; };
+		3A72576927F4ECBE006944D7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A72576727F4ECBE006944D7 /* HomeViewController.swift */; };
+		3A72576A27F4ECBE006944D7 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A72576827F4ECBE006944D7 /* HomeViewController.xib */; };
+		3A72576D27F4ED67006944D7 /* AlertHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A72576C27F4ED67006944D7 /* AlertHelpers.swift */; };
+		3A72577327F4F2CF006944D7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A72577227F4F2CF006944D7 /* TabBarViewController.swift */; };
+		3A72577827F4F340006944D7 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A72577627F4F340006944D7 /* AccountViewController.swift */; };
+		3A72577927F4F340006944D7 /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A72577727F4F340006944D7 /* AccountViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3A13009427F71B8200B856D7 /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
+		3A13009627F72FF800B856D7 /* Popup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Popup.xib; sourceTree = "<group>"; };
+		3A5C4FED28067B0600F69D24 /* inComeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inComeCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A5C4FEE28067B0600F69D24 /* inComeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = inComeCollectionViewCell.xib; sourceTree = "<group>"; };
+		3A5EEF3B27F55F2900F9ECBF /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		3A5EEF3C27F55F2900F9ECBF /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		3A65AA3327FD436B0022476B /* PlanningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningViewController.swift; sourceTree = "<group>"; };
+		3A65AA3427FD436B0022476B /* PlanningViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanningViewController.xib; sourceTree = "<group>"; };
+		3A65AA3727FD43990022476B /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		3A65AA3827FD43990022476B /* ReportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportViewController.xib; sourceTree = "<group>"; };
+		3A65AA3B27FD47710022476B /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		3A65AA3C27FD47710022476B /* BottomSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetViewController.xib; sourceTree = "<group>"; };
+		3A65AA4127FD48330022476B /* SpendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendViewController.swift; sourceTree = "<group>"; };
+		3A65AA4227FD48330022476B /* SpendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpendViewController.xib; sourceTree = "<group>"; };
+		3A65AA4527FD48470022476B /* InComeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InComeViewController.swift; sourceTree = "<group>"; };
+		3A65AA4627FD48470022476B /* InComeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InComeViewController.xib; sourceTree = "<group>"; };
+		3A7256DD27F499F9006944D7 /* AppThuChi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppThuChi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A7256E027F499F9006944D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A7256E227F499F9006944D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3A7256E427F499F9006944D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A7256E727F499F9006944D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A7256E927F499FC006944D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A7256EC27F499FC006944D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A7256EE27F499FC006944D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A72570427F4BEF0006944D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A72575827F4DC19006944D7 /* TPKeyboardAvoidingSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPKeyboardAvoidingSwift.swift; sourceTree = "<group>"; };
+		3A72575C27F4DD46006944D7 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
+		3A72575E27F4DDED006944D7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3A72575F27F4DDED006944D7 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		3A72576227F4E5B4006944D7 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		3A72576327F4E5B4006944D7 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		3A72576727F4ECBE006944D7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3A72576827F4ECBE006944D7 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		3A72576C27F4ED67006944D7 /* AlertHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelpers.swift; sourceTree = "<group>"; };
+		3A72577227F4F2CF006944D7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		3A72577627F4F340006944D7 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		3A72577727F4F340006944D7 /* AccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
+		40022ABC12AC6C5AA6769F31 /* Pods-AppThuChi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppThuChi.debug.xcconfig"; path = "Target Support Files/Pods-AppThuChi/Pods-AppThuChi.debug.xcconfig"; sourceTree = "<group>"; };
+		445B85CC3A908DFFBE044E0B /* Pods-AppThuChi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppThuChi.release.xcconfig"; path = "Target Support Files/Pods-AppThuChi/Pods-AppThuChi.release.xcconfig"; sourceTree = "<group>"; };
+		E267F9EB9DE62BBD970540EA /* Pods_AppThuChi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppThuChi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A7256DA27F499F9006944D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FA3FA0262684884E6FD0640 /* Pods_AppThuChi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A13009227F71B2D00B856D7 /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				3A65AA3B27FD47710022476B /* BottomSheetViewController.swift */,
+				3A65AA3C27FD47710022476B /* BottomSheetViewController.xib */,
+				3A65AA4027FD48110022476B /* spending */,
+				3A13009327F71B5400B856D7 /* Popup */,
+				3A65AA3F27FD48030022476B /* inCome */,
+			);
+			path = BottomSheet;
+			sourceTree = "<group>";
+		};
+		3A13009327F71B5400B856D7 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				3A13009427F71B8200B856D7 /* Popup.swift */,
+				3A13009627F72FF800B856D7 /* Popup.xib */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		3A65AA3F27FD48030022476B /* inCome */ = {
+			isa = PBXGroup;
+			children = (
+				3A65AA4527FD48470022476B /* InComeViewController.swift */,
+				3A65AA4627FD48470022476B /* InComeViewController.xib */,
+				3A5C4FED28067B0600F69D24 /* inComeCollectionViewCell.swift */,
+				3A5C4FEE28067B0600F69D24 /* inComeCollectionViewCell.xib */,
+			);
+			path = inCome;
+			sourceTree = "<group>";
+		};
+		3A65AA4027FD48110022476B /* spending */ = {
+			isa = PBXGroup;
+			children = (
+				3A65AA4127FD48330022476B /* SpendViewController.swift */,
+				3A65AA4227FD48330022476B /* SpendViewController.xib */,
+			);
+			path = spending;
+			sourceTree = "<group>";
+		};
+		3A7256D427F499F8006944D7 = {
+			isa = PBXGroup;
+			children = (
+				3A7256DF27F499F9006944D7 /* AppThuChi */,
+				3A7256DE27F499F9006944D7 /* Products */,
+				C248BE38FEF3C0CA04370D21 /* Pods */,
+				A1834D15F9212FE49A1CC49F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3A7256DE27F499F9006944D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A7256DD27F499F9006944D7 /* AppThuChi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A7256DF27F499F9006944D7 /* AppThuChi */ = {
+			isa = PBXGroup;
+			children = (
+				3A7256E027F499F9006944D7 /* AppDelegate.swift */,
+				3A7256E227F499F9006944D7 /* SceneDelegate.swift */,
+				3A13009227F71B2D00B856D7 /* BottomSheet */,
+				3A72577027F4F210006944D7 /* PlanningScreen */,
+				3A72576F27F4F1EF006944D7 /* ReportScreen */,
+				3A72576E27F4F105006944D7 /* AccountScreen */,
+				3A72576627F4ECA1006944D7 /* HomeScreen */,
+				3A72575627F4DBCF006944D7 /* Login&Register */,
+				3A72577127F4F267006944D7 /* TabBar */,
+				3A7256E927F499FC006944D7 /* Assets.xcassets */,
+				3A7256EB27F499FC006944D7 /* LaunchScreen.storyboard */,
+				3A7256EE27F499FC006944D7 /* Info.plist */,
+				3A72576B27F4ED3E006944D7 /* Helpers */,
+				3A72575A27F4DC6D006944D7 /* ManagerFirebases */,
+				3A72575727F4DBE6006944D7 /* Libraries */,
+				3A72575B27F4DC9E006944D7 /* DontUse */,
+			);
+			path = AppThuChi;
+			sourceTree = "<group>";
+		};
+		3A72575627F4DBCF006944D7 /* Login&Register */ = {
+			isa = PBXGroup;
+			children = (
+				3A72575E27F4DDED006944D7 /* LoginViewController.swift */,
+				3A72575F27F4DDED006944D7 /* LoginViewController.xib */,
+				3A72576227F4E5B4006944D7 /* RegisterViewController.swift */,
+				3A72576327F4E5B4006944D7 /* RegisterViewController.xib */,
+			);
+			path = "Login&Register";
+			sourceTree = "<group>";
+		};
+		3A72575727F4DBE6006944D7 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				3A72575827F4DC19006944D7 /* TPKeyboardAvoidingSwift.swift */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		3A72575A27F4DC6D006944D7 /* ManagerFirebases */ = {
+			isa = PBXGroup;
+			children = (
+				3A72570427F4BEF0006944D7 /* GoogleService-Info.plist */,
+				3A72575C27F4DD46006944D7 /* FirebaseAuthManager.swift */,
+			);
+			path = ManagerFirebases;
+			sourceTree = "<group>";
+		};
+		3A72575B27F4DC9E006944D7 /* DontUse */ = {
+			isa = PBXGroup;
+			children = (
+				3A7256E627F499F9006944D7 /* Main.storyboard */,
+				3A7256E427F499F9006944D7 /* ViewController.swift */,
+			);
+			path = DontUse;
+			sourceTree = "<group>";
+		};
+		3A72576627F4ECA1006944D7 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3A72576727F4ECBE006944D7 /* HomeViewController.swift */,
+				3A72576827F4ECBE006944D7 /* HomeViewController.xib */,
+				3A5EEF3B27F55F2900F9ECBF /* CollectionViewCell.swift */,
+				3A5EEF3C27F55F2900F9ECBF /* CollectionViewCell.xib */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		3A72576B27F4ED3E006944D7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3A72576C27F4ED67006944D7 /* AlertHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3A72576E27F4F105006944D7 /* AccountScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3A72577627F4F340006944D7 /* AccountViewController.swift */,
+				3A72577727F4F340006944D7 /* AccountViewController.xib */,
+			);
+			path = AccountScreen;
+			sourceTree = "<group>";
+		};
+		3A72576F27F4F1EF006944D7 /* ReportScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3A65AA3727FD43990022476B /* ReportViewController.swift */,
+				3A65AA3827FD43990022476B /* ReportViewController.xib */,
+			);
+			path = ReportScreen;
+			sourceTree = "<group>";
+		};
+		3A72577027F4F210006944D7 /* PlanningScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3A65AA3327FD436B0022476B /* PlanningViewController.swift */,
+				3A65AA3427FD436B0022476B /* PlanningViewController.xib */,
+			);
+			path = PlanningScreen;
+			sourceTree = "<group>";
+		};
+		3A72577127F4F267006944D7 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				3A72577227F4F2CF006944D7 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		A1834D15F9212FE49A1CC49F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E267F9EB9DE62BBD970540EA /* Pods_AppThuChi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C248BE38FEF3C0CA04370D21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40022ABC12AC6C5AA6769F31 /* Pods-AppThuChi.debug.xcconfig */,
+				445B85CC3A908DFFBE044E0B /* Pods-AppThuChi.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A7256DC27F499F9006944D7 /* AppThuChi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A7256F127F499FC006944D7 /* Build configuration list for PBXNativeTarget "AppThuChi" */;
+			buildPhases = (
+				48D92623556E268CCC8F931B /* [CP] Check Pods Manifest.lock */,
+				3A7256D927F499F9006944D7 /* Sources */,
+				3A7256DA27F499F9006944D7 /* Frameworks */,
+				3A7256DB27F499F9006944D7 /* Resources */,
+				06379131418ACA86F23E7615 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppThuChi;
+			productName = AppThuChi;
+			productReference = 3A7256DD27F499F9006944D7 /* AppThuChi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A7256D527F499F8006944D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					3A7256DC27F499F9006944D7 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+				};
+			};
+			buildConfigurationList = 3A7256D827F499F8006944D7 /* Build configuration list for PBXProject "AppThuChi" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A7256D427F499F8006944D7;
+			productRefGroup = 3A7256DE27F499F9006944D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A7256DC27F499F9006944D7 /* AppThuChi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A7256DB27F499F9006944D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A72576127F4DDED006944D7 /* LoginViewController.xib in Resources */,
+				3A7256ED27F499FC006944D7 /* LaunchScreen.storyboard in Resources */,
+				3A72570527F4BEF0006944D7 /* GoogleService-Info.plist in Resources */,
+				3A7256EA27F499FC006944D7 /* Assets.xcassets in Resources */,
+				3A7256E827F499F9006944D7 /* Main.storyboard in Resources */,
+				3A65AA3627FD436B0022476B /* PlanningViewController.xib in Resources */,
+				3A72576A27F4ECBE006944D7 /* HomeViewController.xib in Resources */,
+				3A65AA4427FD48330022476B /* SpendViewController.xib in Resources */,
+				3A72577927F4F340006944D7 /* AccountViewController.xib in Resources */,
+				3A72576527F4E5B4006944D7 /* RegisterViewController.xib in Resources */,
+				3A13009727F72FF800B856D7 /* Popup.xib in Resources */,
+				3A5EEF3E27F55F2900F9ECBF /* CollectionViewCell.xib in Resources */,
+				3A65AA3E27FD47710022476B /* BottomSheetViewController.xib in Resources */,
+				3A65AA3A27FD43990022476B /* ReportViewController.xib in Resources */,
+				3A65AA4827FD48470022476B /* InComeViewController.xib in Resources */,
+				3A5C4FF028067B0600F69D24 /* inComeCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06379131418ACA86F23E7615 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppThuChi/Pods-AppThuChi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppThuChi/Pods-AppThuChi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppThuChi/Pods-AppThuChi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48D92623556E268CCC8F931B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppThuChi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A7256D927F499F9006944D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A65AA3927FD43990022476B /* ReportViewController.swift in Sources */,
+				3A65AA4327FD48330022476B /* SpendViewController.swift in Sources */,
+				3A72576027F4DDED006944D7 /* LoginViewController.swift in Sources */,
+				3A13009527F71B8200B856D7 /* Popup.swift in Sources */,
+				3A7256E527F499F9006944D7 /* ViewController.swift in Sources */,
+				3A5EEF3D27F55F2900F9ECBF /* CollectionViewCell.swift in Sources */,
+				3A72576427F4E5B4006944D7 /* RegisterViewController.swift in Sources */,
+				3A72576927F4ECBE006944D7 /* HomeViewController.swift in Sources */,
+				3A65AA3D27FD47710022476B /* BottomSheetViewController.swift in Sources */,
+				3A7256E127F499F9006944D7 /* AppDelegate.swift in Sources */,
+				3A7256E327F499F9006944D7 /* SceneDelegate.swift in Sources */,
+				3A65AA4727FD48470022476B /* InComeViewController.swift in Sources */,
+				3A65AA3527FD436B0022476B /* PlanningViewController.swift in Sources */,
+				3A72575927F4DC19006944D7 /* TPKeyboardAvoidingSwift.swift in Sources */,
+				3A72576D27F4ED67006944D7 /* AlertHelpers.swift in Sources */,
+				3A72577327F4F2CF006944D7 /* TabBarViewController.swift in Sources */,
+				3A72575D27F4DD46006944D7 /* FirebaseAuthManager.swift in Sources */,
+				3A72577827F4F340006944D7 /* AccountViewController.swift in Sources */,
+				3A5C4FEF28067B0600F69D24 /* inComeCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3A7256E627F499F9006944D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A7256E727F499F9006944D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A7256EB27F499FC006944D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A7256EC27F499FC006944D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A7256EF27F499FC006944D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A7256F027F499FC006944D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A7256F227F499FC006944D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40022ABC12AC6C5AA6769F31 /* Pods-AppThuChi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y6ATPX35DW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppThuChi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = duytran.AppThuChi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A7256F327F499FC006944D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 445B85CC3A908DFFBE044E0B /* Pods-AppThuChi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y6ATPX35DW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppThuChi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = duytran.AppThuChi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A7256D827F499F8006944D7 /* Build configuration list for PBXProject "AppThuChi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A7256EF27F499FC006944D7 /* Debug */,
+				3A7256F027F499FC006944D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A7256F127F499FC006944D7 /* Build configuration list for PBXNativeTarget "AppThuChi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A7256F227F499FC006944D7 /* Debug */,
+				3A7256F327F499FC006944D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A7256D527F499F8006944D7 /* Project object */;
+}

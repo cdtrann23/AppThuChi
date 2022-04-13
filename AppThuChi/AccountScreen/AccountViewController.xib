@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountViewController" customModule="AppThuChi" customModuleProvider="target">
+            <connections>
+                <outlet property="profileImage" destination="KTf-4O-qmN" id="FIY-Hd-Tqh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPl-XY-38O">
+                    <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4e-sh-X0K">
+                            <rect key="frame" x="16" y="540" width="343" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="bmw-IB-KOd"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                            <connections>
+                                <action selector="logoutButton:" destination="-1" eventType="touchUpInside" id="wU6-Op-EbN"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_M" translatesAutoresizingMaskIntoConstraints="NO" id="KTf-4O-qmN">
+                            <rect key="frame" x="145" y="100" width="85" height="85"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="85" id="bA3-JI-fC2"/>
+                                <constraint firstAttribute="width" constant="85" id="eub-NI-tbJ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Họ tên" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMv-he-HCJ">
+                            <rect key="frame" x="16" y="229" width="343" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwy-ve-Ybs">
+                            <rect key="frame" x="16" y="250" width="343" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="pMv-he-HCJ" firstAttribute="top" secondItem="KTf-4O-qmN" secondAttribute="bottom" constant="44" id="3ta-Ms-aeL"/>
+                        <constraint firstAttribute="bottom" secondItem="A4e-sh-X0K" secondAttribute="bottom" constant="150" id="7VM-mq-Gva"/>
+                        <constraint firstItem="Lwy-ve-Ybs" firstAttribute="leading" secondItem="UPl-XY-38O" secondAttribute="leading" constant="16" id="A5B-2h-yeJ"/>
+                        <constraint firstItem="KTf-4O-qmN" firstAttribute="top" secondItem="UPl-XY-38O" secondAttribute="top" constant="100" id="Plv-Ed-wFm"/>
+                        <constraint firstItem="KTf-4O-qmN" firstAttribute="centerX" secondItem="UPl-XY-38O" secondAttribute="centerX" id="U31-MM-KcG"/>
+                        <constraint firstAttribute="trailing" secondItem="pMv-he-HCJ" secondAttribute="trailing" constant="16" id="aQo-pw-4th"/>
+                        <constraint firstAttribute="trailing" secondItem="Lwy-ve-Ybs" secondAttribute="trailing" constant="16" id="acM-uk-3OH"/>
+                        <constraint firstItem="Lwy-ve-Ybs" firstAttribute="top" secondItem="pMv-he-HCJ" secondAttribute="bottom" id="def-s8-DJv"/>
+                        <constraint firstAttribute="trailing" secondItem="A4e-sh-X0K" secondAttribute="trailing" constant="16" id="dz1-pB-lfx"/>
+                        <constraint firstItem="A4e-sh-X0K" firstAttribute="leading" secondItem="UPl-XY-38O" secondAttribute="leading" constant="16" id="eY0-0K-yQg"/>
+                        <constraint firstItem="pMv-he-HCJ" firstAttribute="leading" secondItem="UPl-XY-38O" secondAttribute="leading" constant="16" id="h6y-B4-Ldh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="UPl-XY-38O" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="CDa-B8-KAf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="UPl-XY-38O" secondAttribute="bottom" id="IhB-b5-xRj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UPl-XY-38O" secondAttribute="trailing" id="NMa-sK-eG8"/>
+                <constraint firstItem="UPl-XY-38O" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lsN-Uy-dKW"/>
+            </constraints>
+            <point key="canvasLocation" x="138.40000000000001" y="90.886699507389167"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="profile_M" width="995" height="995"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
