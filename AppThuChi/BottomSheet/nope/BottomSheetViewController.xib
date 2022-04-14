@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomSheetViewController" customModule="AppThuChi" customModuleProvider="target">
             <connections>
-                <outlet property="segment" destination="2gJ-yB-s3I" id="rBV-0Y-C3b"/>
+                <outlet property="contentView" destination="bPY-Ho-1Pr" id="8L4-Pk-xUb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -29,16 +29,24 @@
                         <segment title="Chi tiêu"/>
                     </segments>
                     <connections>
-                        <action selector="TouchSegment:" destination="-1" eventType="valueChanged" id="9rX-63-mzB"/>
+                        <action selector="switchTabs:" destination="-1" eventType="valueChanged" id="t86-BS-syw"/>
                     </connections>
                 </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bPY-Ho-1Pr">
+                    <rect key="frame" x="16" y="154" width="382" height="708"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2gJ-yB-s3I" secondAttribute="trailing" constant="16" id="0Xx-Bh-Ba0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bPY-Ho-1Pr" secondAttribute="trailing" constant="16" id="9F3-H1-Qdr"/>
+                <constraint firstItem="bPY-Ho-1Pr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Ojp-re-B4F"/>
                 <constraint firstItem="2gJ-yB-s3I" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="44" id="UDN-h4-FMS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bPY-Ho-1Pr" secondAttribute="bottom" id="WMI-q6-eMm"/>
                 <constraint firstItem="2gJ-yB-s3I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="aQE-Mu-M3P"/>
+                <constraint firstItem="bPY-Ho-1Pr" firstAttribute="top" secondItem="2gJ-yB-s3I" secondAttribute="bottom" constant="16" id="nKb-7t-Jvz"/>
             </constraints>
             <point key="canvasLocation" x="139" y="91"/>
         </view>

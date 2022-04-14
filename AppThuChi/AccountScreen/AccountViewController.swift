@@ -18,9 +18,9 @@ class AccountViewController: UIViewController {
             guard let strongSelf = self else { return }
             
             if status {
-//                let userDefault = UserDefaults.standard
-//                userDefault.removeObject(forKey: "login")
-//                userDefault.removeObject(forKey: "uid")
+                let userDefault = UserDefaults.standard
+                userDefault.removeObject(forKey: "login")
+                userDefault.removeObject(forKey: "uid")
                 strongSelf.dismiss(animated: true, completion: nil)
             } else {
                 let message = "Đăng xuất thất bại"

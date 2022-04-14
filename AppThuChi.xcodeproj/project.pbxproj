@@ -43,6 +43,11 @@
 		3A72577327F4F2CF006944D7 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A72577227F4F2CF006944D7 /* TabBarViewController.swift */; };
 		3A72577827F4F340006944D7 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A72577627F4F340006944D7 /* AccountViewController.swift */; };
 		3A72577927F4F340006944D7 /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A72577727F4F340006944D7 /* AccountViewController.xib */; };
+		3A7D14E42807244E00423270 /* TabySegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D14E32807244E00423270 /* TabySegmentedControl.swift */; };
+		3A93DC23280739D80002617F /* ThuNhapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A93DC22280739D80002617F /* ThuNhapViewController.swift */; };
+		3A93DC25280739E90002617F /* ChiTieuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A93DC24280739E90002617F /* ChiTieuViewController.swift */; };
+		3A93DC2B28073A370002617F /* BottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A93DC2A28073A370002617F /* BottomViewController.swift */; };
+		3A93DC2D28073A490002617F /* Bottom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A93DC2C28073A490002617F /* Bottom.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +88,11 @@
 		3A72577227F4F2CF006944D7 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		3A72577627F4F340006944D7 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		3A72577727F4F340006944D7 /* AccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
+		3A7D14E32807244E00423270 /* TabySegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabySegmentedControl.swift; sourceTree = "<group>"; };
+		3A93DC22280739D80002617F /* ThuNhapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThuNhapViewController.swift; sourceTree = "<group>"; };
+		3A93DC24280739E90002617F /* ChiTieuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiTieuViewController.swift; sourceTree = "<group>"; };
+		3A93DC2A28073A370002617F /* BottomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomViewController.swift; sourceTree = "<group>"; };
+		3A93DC2C28073A490002617F /* Bottom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bottom.storyboard; sourceTree = "<group>"; };
 		40022ABC12AC6C5AA6769F31 /* Pods-AppThuChi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppThuChi.debug.xcconfig"; path = "Target Support Files/Pods-AppThuChi/Pods-AppThuChi.debug.xcconfig"; sourceTree = "<group>"; };
 		445B85CC3A908DFFBE044E0B /* Pods-AppThuChi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppThuChi.release.xcconfig"; path = "Target Support Files/Pods-AppThuChi/Pods-AppThuChi.release.xcconfig"; sourceTree = "<group>"; };
 		E267F9EB9DE62BBD970540EA /* Pods_AppThuChi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppThuChi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,11 +113,15 @@
 		3A13009227F71B2D00B856D7 /* BottomSheet */ = {
 			isa = PBXGroup;
 			children = (
-				3A65AA3B27FD47710022476B /* BottomSheetViewController.swift */,
-				3A65AA3C27FD47710022476B /* BottomSheetViewController.xib */,
+				3A93DC21280739B40002617F /* ThuNhap */,
+				3A93DC20280739A50002617F /* ChiTieu */,
+				3A93DC2A28073A370002617F /* BottomViewController.swift */,
+				3A93DC2C28073A490002617F /* Bottom.storyboard */,
+				3A93DC2E28073A650002617F /* nope */,
 				3A65AA4027FD48110022476B /* spending */,
 				3A13009327F71B5400B856D7 /* Popup */,
 				3A65AA3F27FD48030022476B /* inCome */,
+				3A7D14E32807244E00423270 /* TabySegmentedControl.swift */,
 			);
 			path = BottomSheet;
 			sourceTree = "<group>";
@@ -273,6 +287,31 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		3A93DC20280739A50002617F /* ChiTieu */ = {
+			isa = PBXGroup;
+			children = (
+				3A93DC24280739E90002617F /* ChiTieuViewController.swift */,
+			);
+			path = ChiTieu;
+			sourceTree = "<group>";
+		};
+		3A93DC21280739B40002617F /* ThuNhap */ = {
+			isa = PBXGroup;
+			children = (
+				3A93DC22280739D80002617F /* ThuNhapViewController.swift */,
+			);
+			path = ThuNhap;
+			sourceTree = "<group>";
+		};
+		3A93DC2E28073A650002617F /* nope */ = {
+			isa = PBXGroup;
+			children = (
+				3A65AA3B27FD47710022476B /* BottomSheetViewController.swift */,
+				3A65AA3C27FD47710022476B /* BottomSheetViewController.xib */,
+			);
+			path = nope;
+			sourceTree = "<group>";
+		};
 		A1834D15F9212FE49A1CC49F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +403,7 @@
 				3A5EEF3E27F55F2900F9ECBF /* CollectionViewCell.xib in Resources */,
 				3A65AA3E27FD47710022476B /* BottomSheetViewController.xib in Resources */,
 				3A65AA3A27FD43990022476B /* ReportViewController.xib in Resources */,
+				3A93DC2D28073A490002617F /* Bottom.storyboard in Resources */,
 				3A65AA4827FD48470022476B /* InComeViewController.xib in Resources */,
 				3A5C4FF028067B0600F69D24 /* inComeCollectionViewCell.xib in Resources */,
 			);
@@ -420,18 +460,22 @@
 			files = (
 				3A65AA3927FD43990022476B /* ReportViewController.swift in Sources */,
 				3A65AA4327FD48330022476B /* SpendViewController.swift in Sources */,
+				3A7D14E42807244E00423270 /* TabySegmentedControl.swift in Sources */,
 				3A72576027F4DDED006944D7 /* LoginViewController.swift in Sources */,
 				3A13009527F71B8200B856D7 /* Popup.swift in Sources */,
 				3A7256E527F499F9006944D7 /* ViewController.swift in Sources */,
 				3A5EEF3D27F55F2900F9ECBF /* CollectionViewCell.swift in Sources */,
 				3A72576427F4E5B4006944D7 /* RegisterViewController.swift in Sources */,
 				3A72576927F4ECBE006944D7 /* HomeViewController.swift in Sources */,
+				3A93DC2B28073A370002617F /* BottomViewController.swift in Sources */,
 				3A65AA3D27FD47710022476B /* BottomSheetViewController.swift in Sources */,
 				3A7256E127F499F9006944D7 /* AppDelegate.swift in Sources */,
 				3A7256E327F499F9006944D7 /* SceneDelegate.swift in Sources */,
+				3A93DC25280739E90002617F /* ChiTieuViewController.swift in Sources */,
 				3A65AA4727FD48470022476B /* InComeViewController.swift in Sources */,
 				3A65AA3527FD436B0022476B /* PlanningViewController.swift in Sources */,
 				3A72575927F4DC19006944D7 /* TPKeyboardAvoidingSwift.swift in Sources */,
+				3A93DC23280739D80002617F /* ThuNhapViewController.swift in Sources */,
 				3A72576D27F4ED67006944D7 /* AlertHelpers.swift in Sources */,
 				3A72577327F4F2CF006944D7 /* TabBarViewController.swift in Sources */,
 				3A72575D27F4DD46006944D7 /* FirebaseAuthManager.swift in Sources */,
