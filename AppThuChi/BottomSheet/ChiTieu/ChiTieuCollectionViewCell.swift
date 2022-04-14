@@ -1,6 +1,7 @@
+
 import UIKit
 
-class inComeCollectionViewCell: UICollectionViewCell {
+class ChiTieuCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var tenDanhMuc: UILabel!
     
