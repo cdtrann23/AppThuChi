@@ -1,8 +1,14 @@
 import UIKit
 
+protocol LogoutDelegate {
+    func didLogout()
+}
+
 class AccountViewController: UIViewController {
 
     @IBOutlet weak var profileImage: UIImageView!
+    
+    var delegate: LogoutDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +27,8 @@ class AccountViewController: UIViewController {
                 let userDefault = UserDefaults.standard
                 userDefault.removeObject(forKey: "login")
                 userDefault.removeObject(forKey: "uid")
-                strongSelf.dismiss(animated: true, completion: nil)
+//                strongSelf.dismiss(animated: true, completion: nil)
+                strongSelf.delegate?.didLogout()
             } else {
                 let message = "Đăng xuất thất bại"
                 AlertHelper.showAlert(message: message, viewController: strongSelf)

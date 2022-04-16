@@ -20,6 +20,7 @@ class TabBarViewController: UITabBarController {
         reportVC.tabBarItem = UITabBarItem(title: "Báo cáo", image: UIImage(named: "baocaoicon"), selectedImage: UIImage(named: "tapbaocaoicon"))
         
         let accountVC = AccountViewController()
+        accountVC.delegate = self
         accountVC.tabBarItem = UITabBarItem(title: "Tài khoản", image: UIImage(named: "user"), selectedImage: UIImage(named: "user"))
         
         let add = UIViewController()
@@ -54,8 +55,6 @@ class TabBarViewController: UITabBarController {
         //button.setTitle("Thêm", for: .normal)
 
         button.configuration?.cornerStyle = .capsule
-        
-        
         
         
         view.addSubview(button)
@@ -102,4 +101,10 @@ class TabBarViewController: UITabBarController {
 //        present(BottomSheetVC, animated: true, completion: nil)
 //    }
 
+}
+
+extension TabBarViewController: LogoutDelegate {
+    func didLogout() {
+        dismiss(animated: true, completion: nil)
+    }
 }

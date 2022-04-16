@@ -1,4 +1,5 @@
 import UIKit
+import FirebaseFirestore
 
 class ChiTieuViewController: UIViewController {
 
@@ -58,7 +59,8 @@ class ChiTieuViewController: UIViewController {
                               note: note,
                               date: "\(datePicker.date)",
                               creatorId: UserDefaults.standard.string(forKey: "uid") ?? "")
-        
+        let database = FirebaseFirestore.Firestore.firestore()
+        database.collection("ChiTieu").addDocument(data: chitieu.dictionary)
     }
     
     
