@@ -2,17 +2,16 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet weak var historyCollectionView: UICollectionView!
-    let CellVC = CollectionViewCell()
+    @IBOutlet weak var historyTableView: UITableView!
     
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        historyCollectionView.delegate = self
-        historyCollectionView.dataSource = self
-        historyCollectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "Cell")
-        
-        //print(CellVC.money)
+        historyTableView.delegate = self
+        historyTableView.dataSource = self
+        historyTableView.register(UINib(nibName: "HeaderTableViewCell", bundle: nil), forCellReuseIdentifier: "Header")
+                
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -21,25 +20,17 @@ class HomeViewController: UIViewController {
         }
 }
 
-extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
-
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Header", for: indexPath) as! HeaderTableViewCell
         return cell
-        
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            let availabelWith = view.frame.width
-           return CGSize(width: availabelWith, height: 168)
-        }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-            return 16
-        }
+    
 
 }

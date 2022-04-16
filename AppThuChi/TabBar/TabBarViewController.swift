@@ -5,22 +5,22 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.tabBar.tintColor = .systemOrange
-        self.tabBar.barTintColor = .gray
-        self.tabBar.backgroundColor = .systemGray2
+        self.tabBar.tintColor = UIColor(named: "TabbarIconColor")
+        //self.tabBar.barTintColor = .clear
+        self.tabBar.backgroundColor = UIColor(named: "Ink800")
         
         let homeVC = HomeViewController()
-        homeVC.tabBarItem = UITabBarItem(title: "Thu chi", image: UIImage(named: "walletclick"), selectedImage: UIImage(named: "wallet"))
+        homeVC.tabBarItem = UITabBarItem(title: "Thu chi", image: UIImage(named: "thuchi"), selectedImage: UIImage(named: "thuchi"))
         
         
         let planningVC = PlanningViewController()
-        planningVC.tabBarItem = UITabBarItem(title: "Báo cáo", image: UIImage(named: "statisticsclick"), selectedImage: UIImage(named: "statistics"))
+        planningVC.tabBarItem = UITabBarItem(title: "Vay nợ", image: UIImage(named: "give-money"), selectedImage: UIImage(named: "give-money"))
 
         let reportVC = ReportViewController()
-        reportVC.tabBarItem = UITabBarItem(title: "Vay nợ", image: UIImage(named: "debit-card_click"), selectedImage: UIImage(named: "debit-card"))
+        reportVC.tabBarItem = UITabBarItem(title: "Báo cáo", image: UIImage(named: "baocaoicon"), selectedImage: UIImage(named: "tapbaocaoicon"))
         
         let accountVC = AccountViewController()
-        accountVC.tabBarItem = UITabBarItem(title: "Tài khoản", image: UIImage(named: "user_acc_click"), selectedImage: UIImage(named: "user_acc"))
+        accountVC.tabBarItem = UITabBarItem(title: "Tài khoản", image: UIImage(named: "user"), selectedImage: UIImage(named: "user"))
         
         let add = UIViewController()
         add.tabBarItem = UITabBarItem(title: "Thêm", image: UIImage(named: ""), selectedImage: UIImage(named: ""))
@@ -52,7 +52,7 @@ class TabBarViewController: UITabBarController {
         
         
         //button.setTitle("Thêm", for: .normal)
-        button.setBackgroundImage(UIImage(named: "addButton"), for: .normal)
+
         button.configuration?.cornerStyle = .capsule
         
         
@@ -60,13 +60,16 @@ class TabBarViewController: UITabBarController {
         
         view.addSubview(button)
         
+        button.setImage(UIImage(named: "plus"), for: .normal)
+        
+
         let margins = view.layoutMarginsGuide
         
-            button.translatesAutoresizingMaskIntoConstraints = false
-            button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-            button.bottomAnchor.constraint(equalTo: margins.bottomAnchor, constant: -20).isActive = true
-            button.heightAnchor.constraint(equalToConstant: 50).isActive = true
-            button.widthAnchor.constraint(equalToConstant: 50).isActive = true
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        button.bottomAnchor.constraint(equalTo: margins.bottomAnchor, constant: -15).isActive = true
+        button.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        button.widthAnchor.constraint(equalToConstant: 60).isActive = true
         
 //        button.translatesAutoresizingMaskIntoConstraints = false
 //        button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -74,9 +77,9 @@ class TabBarViewController: UITabBarController {
 //        button.heightAnchor.constraint(equalToConstant: 50).isActive = true
 //        button.widthAnchor.constraint(equalToConstant: 50).isActive = true
 
-
     }
     
+        
 //    private let button: UIButton = {
 //        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
 //

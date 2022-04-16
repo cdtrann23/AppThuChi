@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1FA3FA0262684884E6FD0640 /* Pods_AppThuChi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E267F9EB9DE62BBD970540EA /* Pods_AppThuChi.framework */; };
-		3A5EEF3D27F55F2900F9ECBF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5EEF3B27F55F2900F9ECBF /* CollectionViewCell.swift */; };
-		3A5EEF3E27F55F2900F9ECBF /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A5EEF3C27F55F2900F9ECBF /* CollectionViewCell.xib */; };
+		3A0BC2BA280A4E2800893991 /* ChiTieu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0BC2B9280A4E2800893991 /* ChiTieu.swift */; };
+		3A0BC2BE280A6F2300893991 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0BC2BC280A6F2300893991 /* HeaderTableViewCell.swift */; };
+		3A0BC2BF280A6F2300893991 /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A0BC2BD280A6F2300893991 /* HeaderTableViewCell.xib */; };
+		3A0BC2C2280A6F8700893991 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0BC2C0280A6F8700893991 /* TableViewCell.swift */; };
+		3A0BC2C3280A6F8700893991 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A0BC2C1280A6F8700893991 /* TableViewCell.xib */; };
 		3A65AA3527FD436B0022476B /* PlanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A65AA3327FD436B0022476B /* PlanningViewController.swift */; };
 		3A65AA3627FD436B0022476B /* PlanningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A65AA3427FD436B0022476B /* PlanningViewController.xib */; };
 		3A65AA3927FD43990022476B /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A65AA3727FD43990022476B /* ReportViewController.swift */; };
@@ -45,8 +48,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A5EEF3B27F55F2900F9ECBF /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		3A5EEF3C27F55F2900F9ECBF /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		3A0BC2B9280A4E2800893991 /* ChiTieu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiTieu.swift; sourceTree = "<group>"; };
+		3A0BC2BC280A6F2300893991 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		3A0BC2BD280A6F2300893991 /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
+		3A0BC2C0280A6F8700893991 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3A0BC2C1280A6F8700893991 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		3A65AA3327FD436B0022476B /* PlanningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningViewController.swift; sourceTree = "<group>"; };
 		3A65AA3427FD436B0022476B /* PlanningViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanningViewController.xib; sourceTree = "<group>"; };
 		3A65AA3727FD43990022476B /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
@@ -98,12 +104,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A0BC2B8280A4DF200893991 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A0BC2B9280A4E2800893991 /* ChiTieu.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3A0BC2BB280A6ED800893991 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3A0BC2BC280A6F2300893991 /* HeaderTableViewCell.swift */,
+				3A0BC2BD280A6F2300893991 /* HeaderTableViewCell.xib */,
+				3A0BC2C0280A6F8700893991 /* TableViewCell.swift */,
+				3A0BC2C1280A6F8700893991 /* TableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		3A13009227F71B2D00B856D7 /* BottomSheet */ = {
 			isa = PBXGroup;
 			children = (
+				3A0BC2B8280A4DF200893991 /* Models */,
 				3A93DC21280739B40002617F /* ThuNhap */,
 				3A93DC20280739A50002617F /* ChiTieu */,
-				3A93DC2A28073A370002617F /* BottomViewController.swift */,
 				3A93DC2C28073A490002617F /* Bottom.storyboard */,
 				3A93DC2E28073A650002617F /* nope */,
 				3A7D14E32807244E00423270 /* TabySegmentedControl.swift */,
@@ -192,10 +217,9 @@
 		3A72576627F4ECA1006944D7 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				3A0BC2BB280A6ED800893991 /* TableViewCell */,
 				3A72576727F4ECBE006944D7 /* HomeViewController.swift */,
 				3A72576827F4ECBE006944D7 /* HomeViewController.xib */,
-				3A5EEF3B27F55F2900F9ECBF /* CollectionViewCell.swift */,
-				3A5EEF3C27F55F2900F9ECBF /* CollectionViewCell.xib */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -247,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				3A93DC24280739E90002617F /* ChiTieuViewController.swift */,
+				3A93DC2A28073A370002617F /* BottomViewController.swift */,
 				3A93DC67280811FC0002617F /* ChiTieuCollectionViewCell.swift */,
 				3A93DC68280811FC0002617F /* ChiTieuCollectionViewCell.xib */,
 			);
@@ -352,14 +377,15 @@
 				3A72570527F4BEF0006944D7 /* GoogleService-Info.plist in Resources */,
 				3A7256EA27F499FC006944D7 /* Assets.xcassets in Resources */,
 				3A7256E827F499F9006944D7 /* Main.storyboard in Resources */,
+				3A0BC2C3280A6F8700893991 /* TableViewCell.xib in Resources */,
 				3A65AA3627FD436B0022476B /* PlanningViewController.xib in Resources */,
 				3A72576A27F4ECBE006944D7 /* HomeViewController.xib in Resources */,
 				3A93DC6A280811FC0002617F /* ChiTieuCollectionViewCell.xib in Resources */,
 				3A72577927F4F340006944D7 /* AccountViewController.xib in Resources */,
 				3A72576527F4E5B4006944D7 /* RegisterViewController.xib in Resources */,
-				3A5EEF3E27F55F2900F9ECBF /* CollectionViewCell.xib in Resources */,
 				3A65AA3E27FD47710022476B /* BottomSheetViewController.xib in Resources */,
 				3A65AA3A27FD43990022476B /* ReportViewController.xib in Resources */,
+				3A0BC2BF280A6F2300893991 /* HeaderTableViewCell.xib in Resources */,
 				3A93DC2D28073A490002617F /* Bottom.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,7 +444,6 @@
 				3A72576027F4DDED006944D7 /* LoginViewController.swift in Sources */,
 				3A93DC69280811FC0002617F /* ChiTieuCollectionViewCell.swift in Sources */,
 				3A7256E527F499F9006944D7 /* ViewController.swift in Sources */,
-				3A5EEF3D27F55F2900F9ECBF /* CollectionViewCell.swift in Sources */,
 				3A72576427F4E5B4006944D7 /* RegisterViewController.swift in Sources */,
 				3A72576927F4ECBE006944D7 /* HomeViewController.swift in Sources */,
 				3A93DC2B28073A370002617F /* BottomViewController.swift in Sources */,
@@ -426,13 +451,16 @@
 				3A7256E127F499F9006944D7 /* AppDelegate.swift in Sources */,
 				3A7256E327F499F9006944D7 /* SceneDelegate.swift in Sources */,
 				3A93DC25280739E90002617F /* ChiTieuViewController.swift in Sources */,
+				3A0BC2BA280A4E2800893991 /* ChiTieu.swift in Sources */,
 				3A65AA3527FD436B0022476B /* PlanningViewController.swift in Sources */,
 				3A72575927F4DC19006944D7 /* TPKeyboardAvoidingSwift.swift in Sources */,
+				3A0BC2BE280A6F2300893991 /* HeaderTableViewCell.swift in Sources */,
 				3A93DC23280739D80002617F /* ThuNhapViewController.swift in Sources */,
 				3A72576D27F4ED67006944D7 /* AlertHelpers.swift in Sources */,
 				3A72577327F4F2CF006944D7 /* TabBarViewController.swift in Sources */,
 				3A72575D27F4DD46006944D7 /* FirebaseAuthManager.swift in Sources */,
 				3A72577827F4F340006944D7 /* AccountViewController.swift in Sources */,
+				3A0BC2C2280A6F8700893991 /* TableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

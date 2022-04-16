@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="AppThuChi" customModuleProvider="target">
             <connections>
-                <outlet property="historyCollectionView" destination="qWV-8s-EQF" id="T6s-GI-Fsd"/>
+                <outlet property="historyTableView" destination="Ksm-26-okp" id="gBm-s2-RUd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -121,29 +121,23 @@
                                 <constraint firstItem="1Ih-nD-iln" firstAttribute="centerX" secondItem="3Qz-Fo-mjx" secondAttribute="centerX" id="q40-J2-rBk"/>
                             </constraints>
                         </view>
-                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qWV-8s-EQF">
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ksm-26-okp">
                             <rect key="frame" x="0.0" y="345" width="414" height="473"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iPM-rF-dSJ">
-                                <size key="itemSize" width="128" height="128"/>
-                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                            </collectionViewFlowLayout>
-                        </collectionView>
+                        </tableView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="Efg-Yo-lQP" secondAttribute="trailing" constant="16" id="CEV-sF-afa"/>
                         <constraint firstItem="51F-iJ-ErI" firstAttribute="top" secondItem="FOj-rZ-zVm" secondAttribute="top" id="CNK-ft-YJV"/>
-                        <constraint firstAttribute="bottom" secondItem="qWV-8s-EQF" secondAttribute="bottom" id="Oia-BM-jle"/>
+                        <constraint firstItem="Ksm-26-okp" firstAttribute="leading" secondItem="FOj-rZ-zVm" secondAttribute="leading" id="NPV-k4-MCr"/>
+                        <constraint firstItem="Ksm-26-okp" firstAttribute="top" secondItem="Efg-Yo-lQP" secondAttribute="bottom" constant="16" id="Nr4-ze-E1w"/>
                         <constraint firstItem="Efg-Yo-lQP" firstAttribute="top" secondItem="51F-iJ-ErI" secondAttribute="bottom" constant="16" id="R0j-78-hnV"/>
+                        <constraint firstAttribute="trailing" secondItem="Ksm-26-okp" secondAttribute="trailing" id="SU8-x0-uph"/>
                         <constraint firstItem="Efg-Yo-lQP" firstAttribute="leading" secondItem="FOj-rZ-zVm" secondAttribute="leading" constant="16" id="WU4-Lc-2zs"/>
                         <constraint firstItem="51F-iJ-ErI" firstAttribute="leading" secondItem="FOj-rZ-zVm" secondAttribute="leading" constant="16" id="ZHK-vO-jPI"/>
-                        <constraint firstItem="qWV-8s-EQF" firstAttribute="leading" secondItem="FOj-rZ-zVm" secondAttribute="leading" id="iaj-cj-kuF"/>
-                        <constraint firstItem="qWV-8s-EQF" firstAttribute="top" secondItem="Efg-Yo-lQP" secondAttribute="bottom" constant="16" id="ipR-9C-SRd"/>
                         <constraint firstAttribute="trailing" secondItem="51F-iJ-ErI" secondAttribute="trailing" constant="16" id="lcj-tg-04M"/>
-                        <constraint firstAttribute="trailing" secondItem="qWV-8s-EQF" secondAttribute="trailing" id="vS2-Gr-gLP"/>
+                        <constraint firstAttribute="bottom" secondItem="Ksm-26-okp" secondAttribute="bottom" id="p15-rx-VxO"/>
                     </constraints>
                 </view>
             </subviews>

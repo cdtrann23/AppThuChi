@@ -3,6 +3,7 @@
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -36,13 +37,13 @@
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNd-iw-8AF">
-                                    <rect key="frame" x="16" y="336" width="343" height="29"/>
-                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
-                                    <color key="textColor" red="0.25518160270000001" green="0.29470843089999998" blue="0.4758752181" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <rect key="frame" x="16" y="336" width="343" height="27.666666666666686"/>
+                                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="24"/>
+                                    <color key="textColor" name="Primary500"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email or mobile number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CPH-KQ-Rxp">
-                                    <rect key="frame" x="16" y="409" width="343" height="44"/>
+                                    <rect key="frame" x="16" y="407.66666666666669" width="343" height="44"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="44" id="6L0-r9-gs1"/>
                                     </constraints>
@@ -50,18 +51,18 @@
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iMl-fl-eTq">
-                                    <rect key="frame" x="16" y="469" width="343" height="44"/>
+                                    <rect key="frame" x="16" y="467.66666666666669" width="343" height="44"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mis-mQ-Tr5">
-                                    <rect key="frame" x="16" y="589" width="343" height="44"/>
+                                    <rect key="frame" x="16" y="587.66666666666663" width="343" height="44"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dw1-pe-t42">
-                                    <rect key="frame" x="16" y="677" width="343" height="44"/>
-                                    <color key="backgroundColor" red="0.36006167529999999" green="0.41368415949999998" blue="0.66669404509999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <rect key="frame" x="16" y="675.66666666666663" width="343" height="44"/>
+                                    <color key="backgroundColor" name="Primary500"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain">
@@ -79,12 +80,12 @@
                                     </connections>
                                 </button>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6G8-pG-S4o">
-                                    <rect key="frame" x="16" y="529" width="343" height="44"/>
+                                    <rect key="frame" x="16" y="527.66666666666663" width="343" height="44"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heB-Kw-yyV">
-                                    <rect key="frame" x="136.33333333333334" y="783.66666666666663" width="102.66666666666666" height="32.666666666666629"/>
+                                    <rect key="frame" x="136.33333333333334" y="782.33333333333337" width="102.66666666666666" height="32.666666666666629"/>
                                     <color key="tintColor" red="0.28878900410000002" green="0.33260935539999997" blue="0.53335523610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain">
@@ -103,7 +104,7 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCg-CF-laJ">
-                                    <rect key="frame" x="96" y="765" width="183" height="18.666666666666629"/>
+                                    <rect key="frame" x="96" y="763.66666666666663" width="183" height="18.666666666666629"/>
                                     <attributedString key="attributedText">
                                         <fragment content="Do you have an account?">
                                             <attributes>
@@ -177,6 +178,9 @@
     </objects>
     <resources>
         <image name="register_Img" width="11111" height="11111"/>
+        <namedColor name="Primary500">
+            <color red="0.3676638901" green="0.42203301189999998" blue="0.65884965660000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

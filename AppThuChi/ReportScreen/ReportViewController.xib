@@ -18,18 +18,25 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tính năng đang phát triển" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLH-9i-Ues">
-                    <rect key="frame" x="186" y="179" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLH-9i-Ues">
+                    <rect key="frame" x="16" y="179" width="382" height="28"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Tính năng đang phát triển">
+                            <attributes>
+                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                <font key="NSOriginalFont" size="24" name="Helvetica-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pLH-9i-Ues" secondAttribute="trailing" constant="186" id="VoI-tl-P9v"/>
-                <constraint firstItem="pLH-9i-Ues" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="186" id="xp3-TG-Z1u"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pLH-9i-Ues" secondAttribute="trailing" constant="16" id="VoI-tl-P9v"/>
+                <constraint firstItem="pLH-9i-Ues" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="xp3-TG-Z1u"/>
                 <constraint firstItem="pLH-9i-Ues" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="135" id="z6N-JJ-XFG"/>
             </constraints>
             <point key="canvasLocation" x="139" y="91"/>

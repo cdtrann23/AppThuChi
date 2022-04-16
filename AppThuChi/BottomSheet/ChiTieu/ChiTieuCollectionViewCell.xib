@@ -60,6 +60,7 @@
             </constraints>
             <size key="customSize" width="220" height="50"/>
             <connections>
+                <outlet property="anhDanhMucCell" destination="YIs-l7-2G0" id="T57-xP-H3F"/>
                 <outlet property="tenDanhMuc" destination="I8N-KT-Cjq" id="enh-Cl-d04"/>
             </connections>
             <point key="canvasLocation" x="260.86956521739131" y="109.82142857142857"/>
