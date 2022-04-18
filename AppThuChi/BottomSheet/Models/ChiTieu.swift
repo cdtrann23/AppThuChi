@@ -15,6 +15,7 @@ extension Encodable {
         return dictionary[key]
     }
 }
+
 struct ChiTieu: Codable {
     let id: String
     let money: Float
@@ -23,3 +24,13 @@ struct ChiTieu: Codable {
     let date: String
     let creatorId: String
 }
+
+struct ThuNhap: Codable {
+    let id: String
+    let money: Float
+    let danhMuc: String
+    let note: String
+    let date: String
+    let creatorId: String
+}
+

@@ -17,13 +17,10 @@
 		3A65AA3627FD436B0022476B /* PlanningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A65AA3427FD436B0022476B /* PlanningViewController.xib */; };
 		3A65AA3927FD43990022476B /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A65AA3727FD43990022476B /* ReportViewController.swift */; };
 		3A65AA3A27FD43990022476B /* ReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A65AA3827FD43990022476B /* ReportViewController.xib */; };
-		3A65AA3D27FD47710022476B /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A65AA3B27FD47710022476B /* BottomSheetViewController.swift */; };
-		3A65AA3E27FD47710022476B /* BottomSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A65AA3C27FD47710022476B /* BottomSheetViewController.xib */; };
 		3A7256E127F499F9006944D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7256E027F499F9006944D7 /* AppDelegate.swift */; };
 		3A7256E327F499F9006944D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7256E227F499F9006944D7 /* SceneDelegate.swift */; };
 		3A7256E527F499F9006944D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7256E427F499F9006944D7 /* ViewController.swift */; };
 		3A7256E827F499F9006944D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7256E627F499F9006944D7 /* Main.storyboard */; };
-		3A7256EA27F499FC006944D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A7256E927F499FC006944D7 /* Assets.xcassets */; };
 		3A7256ED27F499FC006944D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7256EB27F499FC006944D7 /* LaunchScreen.storyboard */; };
 		3A72570527F4BEF0006944D7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A72570427F4BEF0006944D7 /* GoogleService-Info.plist */; };
 		3A72575927F4DC19006944D7 /* TPKeyboardAvoidingSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A72575827F4DC19006944D7 /* TPKeyboardAvoidingSwift.swift */; };
@@ -39,6 +36,7 @@
 		3A72577827F4F340006944D7 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A72577627F4F340006944D7 /* AccountViewController.swift */; };
 		3A72577927F4F340006944D7 /* AccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A72577727F4F340006944D7 /* AccountViewController.xib */; };
 		3A7D14E42807244E00423270 /* TabySegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D14E32807244E00423270 /* TabySegmentedControl.swift */; };
+		3A911380280BD12400A81688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A91137F280BD12400A81688 /* Assets.xcassets */; };
 		3A93DC23280739D80002617F /* ThuNhapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A93DC22280739D80002617F /* ThuNhapViewController.swift */; };
 		3A93DC25280739E90002617F /* ChiTieuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A93DC24280739E90002617F /* ChiTieuViewController.swift */; };
 		3A93DC2B28073A370002617F /* BottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A93DC2A28073A370002617F /* BottomViewController.swift */; };
@@ -57,14 +55,11 @@
 		3A65AA3427FD436B0022476B /* PlanningViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanningViewController.xib; sourceTree = "<group>"; };
 		3A65AA3727FD43990022476B /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		3A65AA3827FD43990022476B /* ReportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportViewController.xib; sourceTree = "<group>"; };
-		3A65AA3B27FD47710022476B /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
-		3A65AA3C27FD47710022476B /* BottomSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetViewController.xib; sourceTree = "<group>"; };
 		3A7256DD27F499F9006944D7 /* AppThuChi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppThuChi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7256E027F499F9006944D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A7256E227F499F9006944D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3A7256E427F499F9006944D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3A7256E727F499F9006944D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3A7256E927F499FC006944D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A7256EC27F499FC006944D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A7256EE27F499FC006944D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A72570427F4BEF0006944D7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -81,6 +76,7 @@
 		3A72577627F4F340006944D7 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		3A72577727F4F340006944D7 /* AccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountViewController.xib; sourceTree = "<group>"; };
 		3A7D14E32807244E00423270 /* TabySegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabySegmentedControl.swift; sourceTree = "<group>"; };
+		3A91137F280BD12400A81688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		3A93DC22280739D80002617F /* ThuNhapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThuNhapViewController.swift; sourceTree = "<group>"; };
 		3A93DC24280739E90002617F /* ChiTieuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChiTieuViewController.swift; sourceTree = "<group>"; };
 		3A93DC2A28073A370002617F /* BottomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomViewController.swift; sourceTree = "<group>"; };
@@ -126,12 +122,12 @@
 		3A13009227F71B2D00B856D7 /* BottomSheet */ = {
 			isa = PBXGroup;
 			children = (
+				3A7D14E32807244E00423270 /* TabySegmentedControl.swift */,
+				3A93DC2A28073A370002617F /* BottomViewController.swift */,
+				3A93DC2C28073A490002617F /* Bottom.storyboard */,
 				3A0BC2B8280A4DF200893991 /* Models */,
 				3A93DC21280739B40002617F /* ThuNhap */,
 				3A93DC20280739A50002617F /* ChiTieu */,
-				3A93DC2C28073A490002617F /* Bottom.storyboard */,
-				3A93DC2E28073A650002617F /* nope */,
-				3A7D14E32807244E00423270 /* TabySegmentedControl.swift */,
 			);
 			path = BottomSheet;
 			sourceTree = "<group>";
@@ -160,13 +156,13 @@
 				3A7256E027F499F9006944D7 /* AppDelegate.swift */,
 				3A7256E227F499F9006944D7 /* SceneDelegate.swift */,
 				3A13009227F71B2D00B856D7 /* BottomSheet */,
-				3A72576E27F4F105006944D7 /* AccountScreen */,
 				3A72576627F4ECA1006944D7 /* HomeScreen */,
 				3A72575627F4DBCF006944D7 /* Login&Register */,
 				3A72577127F4F267006944D7 /* TabBar */,
-				3A7256E927F499FC006944D7 /* Assets.xcassets */,
 				3A7256EB27F499FC006944D7 /* LaunchScreen.storyboard */,
 				3A7256EE27F499FC006944D7 /* Info.plist */,
+				3A91137F280BD12400A81688 /* Assets.xcassets */,
+				3A72576E27F4F105006944D7 /* AccountScreen */,
 				3A72576B27F4ED3E006944D7 /* Helpers */,
 				3A72575A27F4DC6D006944D7 /* ManagerFirebases */,
 				3A72575727F4DBE6006944D7 /* Libraries */,
@@ -271,7 +267,6 @@
 			isa = PBXGroup;
 			children = (
 				3A93DC24280739E90002617F /* ChiTieuViewController.swift */,
-				3A93DC2A28073A370002617F /* BottomViewController.swift */,
 				3A93DC67280811FC0002617F /* ChiTieuCollectionViewCell.swift */,
 				3A93DC68280811FC0002617F /* ChiTieuCollectionViewCell.xib */,
 			);
@@ -284,15 +279,6 @@
 				3A93DC22280739D80002617F /* ThuNhapViewController.swift */,
 			);
 			path = ThuNhap;
-			sourceTree = "<group>";
-		};
-		3A93DC2E28073A650002617F /* nope */ = {
-			isa = PBXGroup;
-			children = (
-				3A65AA3B27FD47710022476B /* BottomSheetViewController.swift */,
-				3A65AA3C27FD47710022476B /* BottomSheetViewController.xib */,
-			);
-			path = nope;
 			sourceTree = "<group>";
 		};
 		A1834D15F9212FE49A1CC49F /* Frameworks */ = {
@@ -375,15 +361,14 @@
 				3A72576127F4DDED006944D7 /* LoginViewController.xib in Resources */,
 				3A7256ED27F499FC006944D7 /* LaunchScreen.storyboard in Resources */,
 				3A72570527F4BEF0006944D7 /* GoogleService-Info.plist in Resources */,
-				3A7256EA27F499FC006944D7 /* Assets.xcassets in Resources */,
 				3A7256E827F499F9006944D7 /* Main.storyboard in Resources */,
+				3A911380280BD12400A81688 /* Assets.xcassets in Resources */,
 				3A0BC2C3280A6F8700893991 /* TableViewCell.xib in Resources */,
 				3A65AA3627FD436B0022476B /* PlanningViewController.xib in Resources */,
 				3A72576A27F4ECBE006944D7 /* HomeViewController.xib in Resources */,
 				3A93DC6A280811FC0002617F /* ChiTieuCollectionViewCell.xib in Resources */,
 				3A72577927F4F340006944D7 /* AccountViewController.xib in Resources */,
 				3A72576527F4E5B4006944D7 /* RegisterViewController.xib in Resources */,
-				3A65AA3E27FD47710022476B /* BottomSheetViewController.xib in Resources */,
 				3A65AA3A27FD43990022476B /* ReportViewController.xib in Resources */,
 				3A0BC2BF280A6F2300893991 /* HeaderTableViewCell.xib in Resources */,
 				3A93DC2D28073A490002617F /* Bottom.storyboard in Resources */,
@@ -447,7 +432,6 @@
 				3A72576427F4E5B4006944D7 /* RegisterViewController.swift in Sources */,
 				3A72576927F4ECBE006944D7 /* HomeViewController.swift in Sources */,
 				3A93DC2B28073A370002617F /* BottomViewController.swift in Sources */,
-				3A65AA3D27FD47710022476B /* BottomSheetViewController.swift in Sources */,
 				3A7256E127F499F9006944D7 /* AppDelegate.swift in Sources */,
 				3A7256E327F499F9006944D7 /* SceneDelegate.swift in Sources */,
 				3A93DC25280739E90002617F /* ChiTieuViewController.swift in Sources */,

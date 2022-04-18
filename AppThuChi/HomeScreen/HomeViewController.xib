@@ -10,7 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="AppThuChi" customModuleProvider="target">
             <connections>
+                <outlet property="chiTieuLable" destination="iNU-6W-og5" id="Zki-xn-BS5"/>
                 <outlet property="historyTableView" destination="Ksm-26-okp" id="gBm-s2-RUd"/>
+                <outlet property="soDuLable" destination="n25-0a-6bv" id="63c-RU-vAr"/>
+                <outlet property="thuNhapLable" destination="3Qz-Fo-mjx" id="rf7-5N-GQ5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

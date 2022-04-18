@@ -50,57 +50,22 @@ class TabBarViewController: UITabBarController {
             
 
         }))
-        
-        
-        //button.setTitle("Thêm", for: .normal)
 
         button.configuration?.cornerStyle = .capsule
-        
+        button.setImage(UIImage(named: "add-button-1"), for: .normal)
         
         view.addSubview(button)
         
-        button.setImage(UIImage(named: "plus"), for: .normal)
         
-
         let margins = view.layoutMarginsGuide
         
         button.translatesAutoresizingMaskIntoConstraints = false
         button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        button.bottomAnchor.constraint(equalTo: margins.bottomAnchor, constant: -15).isActive = true
-        button.heightAnchor.constraint(equalToConstant: 60).isActive = true
-        button.widthAnchor.constraint(equalToConstant: 60).isActive = true
+        button.bottomAnchor.constraint(equalTo: margins.bottomAnchor, constant: -20).isActive = true
+        button.heightAnchor.constraint(equalToConstant: 55).isActive = true
+        button.widthAnchor.constraint(equalToConstant: 55).isActive = true
         
-//        button.translatesAutoresizingMaskIntoConstraints = false
-//        button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-//        button.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-//        button.heightAnchor.constraint(equalToConstant: 50).isActive = true
-//        button.widthAnchor.constraint(equalToConstant: 50).isActive = true
-
     }
-    
-        
-//    private let button: UIButton = {
-//        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-//
-//
-//        button.setTitleColor(.white, for: .normal)
-//        //button.setTitle("Add", for: .normal)
-//        button.layer.cornerRadius = 50
-//        button.setBackgroundImage(UIImage(named: "addButton"), for: .normal)
-//
-//
-//        return button
-//    }()
-//
-//    @objc private func didTapButton() {
-//
-////        let BottomSheetVC = BottomSheetViewController()
-//
-//        let BottomSheetVC = BottomViewController()
-//        BottomSheetVC.modalTransitionStyle = .coverVertical
-//        present(BottomSheetVC, animated: true, completion: nil)
-//    }
-
 }
 
 extension TabBarViewController: LogoutDelegate {

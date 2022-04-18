@@ -15,26 +15,16 @@ class ChiTieuViewController: UIViewController {
     let data = ["Ăn uống", "Điện", "Nước", "Nhà", "Đi lại", "Khác"]
     let img = [
         UIImage(named: "restaurant"),
-        UIImage(named: "more"),
-        UIImage(named: "restaurant"),
-        UIImage(named: "more"),
-        UIImage(named: "restaurant"),
-        UIImage(named: "more"),
-        UIImage(named: "restaurant")
+        UIImage(named: "electric"),
+        UIImage(named: "water"),
+        UIImage(named: "home"),
+        UIImage(named: "gas"),
+        UIImage(named: "more")
     ]
     
     let insetSection = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
     let itemPerRow: CGFloat = 3.0
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        print("Second VC will appear")
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        print("Second VC will disappear")
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,16 +38,17 @@ class ChiTieuViewController: UIViewController {
     @IBAction func saveButton(_ sender: Any) {
         guard let money = moneyTextField.text,
               let danhMuc = danhMucTextField.text,
-              let note = noteTextField.text
+              let note = noteTextField.text,
+              let date = dateTextField.text
         else {
             return
         }
         
         let chitieu = ChiTieu(id: UUID().uuidString,
-                              money: Float(money) ?? 0.0,
+                              money: (Float(money) ?? 0.0) * -1,
                               danhMuc: danhMuc,
                               note: note,
-                              date: "\(datePicker.date)",
+                              date: date,
                               creatorId: UserDefaults.standard.string(forKey: "uid") ?? "")
         let database = FirebaseFirestore.Firestore.firestore()
         database.collection("ChiTieu").addDocument(data: chitieu.dictionary)
@@ -65,28 +56,30 @@ class ChiTieuViewController: UIViewController {
     
     
     func createDatePicker(){
-        let date = Date()
-        let formatter = DateFormatter()
-        formatter.dateFormat = "EEEE, d MMM yyyy"
-        dateTextField.text = formatter.string(from: date)
-        dateTextField.textColor = .black
         
-        datePicker = UIDatePicker()
+        //datePicker = UIDatePicker()
         datePicker.datePickerMode = .date
-        datePicker.addTarget(self, action: #selector(datePickerValueChanged(sender:)), for: UIControl.Event.valueChanged)
+        datePicker.addTarget(self, action: #selector(dateChanged(datePicker:)), for: UIControl.Event.valueChanged)
         datePicker.frame.size = CGSize(width: 0, height: 300)
         datePicker.preferredDatePickerStyle = .wheels
         
         dateTextField.inputView = datePicker
-                
+        dateTextField.text = formatDate(date: Date())
 
     }
     
-    @objc func datePickerValueChanged(sender: UIDatePicker){
+    
+    
+    @objc func dateChanged(datePicker: UIDatePicker) {
+        
+        dateTextField.text = formatDate(date: datePicker.date)
+
+    }
+    
+    func formatDate(date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "EEEE, d MMM yyyy"
-        dateTextField.text = formatter.string(from: sender.date)
-//        print(datePicker.date)
+        return formatter.string(from: date)
     }
 }
 

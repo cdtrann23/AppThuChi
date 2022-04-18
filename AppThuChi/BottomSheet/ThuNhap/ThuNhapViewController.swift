@@ -1,15 +1,30 @@
 import UIKit
+import FirebaseFirestore
 
 class ThuNhapViewController: UIViewController {
 
-    @IBOutlet weak var danhMucCollectionView: UICollectionView!
-    @IBOutlet weak var DateTextField: UITextField!
+    @IBOutlet weak var noteTextField: UITextField!
+    @IBOutlet weak var moneyTextField: UITextField!
+    @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var danhMucTextField: UITextField!
     
-    let data = ["Lương", "Thưởng", "Trợ cấp", "Lì xì", "Đánh đề", "Khác"]
+    @IBOutlet weak var danhMucCollectionView: UICollectionView!
+    @IBOutlet weak var anhDanhMuc: UIImageView!
+    
+    var datePicker = UIDatePicker()
+    let data = ["Lương", "Thưởng", "Trợ cấp", "Lì xì", "Đầu tư"]
+    let img = [
+        UIImage(named: "Luong"),
+        UIImage(named: "Thuong"),
+        UIImage(named: "Trocap"),
+        UIImage(named: "Lixi"),
+        UIImage(named: "Dautu")
+    ]
+
     let insetSection = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
     let itemPerRow: CGFloat = 3.0
-    let datePicker = UIDatePicker()
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,29 +36,52 @@ class ThuNhapViewController: UIViewController {
         createDatePicker()
     }
     
-    func createDatePicker(){
-        let date = Date()
-        let formatter = DateFormatter()
-        formatter.dateFormat = "EEEE, d MMM yyyy"
-        DateTextField.text = formatter.string(from: date)
-        DateTextField.textColor = .black
+    @IBAction func saveButton(_ sender: Any) {
+        guard let money = moneyTextField.text,
+              let danhMuc = danhMucTextField.text,
+              let note = noteTextField.text,
+              let date = dateTextField.text
+        else {
+            return
+        }
         
-        let datePicker = UIDatePicker()
-        datePicker.datePickerMode = .date
-        datePicker.addTarget(self, action: #selector(datePickerValueChanged(sender:)), for: UIControl.Event.valueChanged)
-        datePicker.frame.size = CGSize(width: 0, height: 250)
-        datePicker.preferredDatePickerStyle = .wheels
-        DateTextField.inputView = datePicker
+        let thunhap = ThuNhap(id: UUID().uuidString,
+                              money: Float(money) ?? 0.0,
+                              danhMuc: danhMuc,
+                              note: note,
+                              date: date,
+                              creatorId: UserDefaults.standard.string(forKey: "uid") ?? "")
+        let database = FirebaseFirestore.Firestore.firestore()
+        database.collection("ThuNhap").addDocument(data: thunhap.dictionary)
     }
     
-    @objc func datePickerValueChanged(sender: UIDatePicker){
+    func createDatePicker(){
+        
+        //datePicker = UIDatePicker()
+        datePicker.datePickerMode = .date
+        datePicker.addTarget(self, action: #selector(dateChanged(datePicker:)), for: UIControl.Event.valueChanged)
+        datePicker.frame.size = CGSize(width: 0, height: 300)
+        datePicker.preferredDatePickerStyle = .wheels
+        
+        dateTextField.inputView = datePicker
+        dateTextField.text = formatDate(date: Date())
+
+    }
+    
+    
+    
+    @objc func dateChanged(datePicker: UIDatePicker) {
+        
+        dateTextField.text = formatDate(date: datePicker.date)
+
+    }
+    
+    func formatDate(date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "EEEE, d MMM yyyy"
-        DateTextField.text = formatter.string(from: sender.date)
+        return formatter.string(from: date)
     }
-    
 }
-
 
 extension ThuNhapViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
@@ -55,7 +93,8 @@ extension ThuNhapViewController: UICollectionViewDelegate, UICollectionViewDataS
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! ChiTieuCollectionViewCell
 
         cell.tenDanhMuc.text = data[indexPath.row]
-
+        cell.anhDanhMucCell.image = img[indexPath.row]
+        
         return cell
 
     }
@@ -64,7 +103,7 @@ extension ThuNhapViewController: UICollectionViewDelegate, UICollectionViewDataS
 
         let padding = CGFloat(itemPerRow + 1) * 8
 //        let availabelWith = view.frame.width - padding
-        let a = view.frame.width - (40 + 16*3)
+        let a = collectionView.frame.width
         let availabelWith = a - padding
         let size = availabelWith / itemPerRow
       
@@ -79,11 +118,14 @@ extension ThuNhapViewController: UICollectionViewDelegate, UICollectionViewDataS
         return 8
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 8
+    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedData = data[indexPath.item]
         danhMucTextField.text = selectedData
-        
-        print(danhMucTextField.text)
+        anhDanhMuc.image = img[indexPath.row]
     }
     
 }
