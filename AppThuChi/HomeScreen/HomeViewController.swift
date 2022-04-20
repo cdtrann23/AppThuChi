@@ -1,10 +1,13 @@
 import UIKit
 import FirebaseFirestore
 import Foundation
+import FSCalendar
 
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var historyTableView: UITableView!
+    @IBOutlet weak var calendar: FSCalendar!
+    
     let header = HeaderTableViewCell()
     @IBOutlet weak var thuNhapLable: UILabel!
     @IBOutlet weak var chiTieuLable: UILabel!

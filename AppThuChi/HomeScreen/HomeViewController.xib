@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="AppThuChi" customModuleProvider="target">
             <connections>
+                <outlet property="calendar" destination="WUX-fM-l2Z" id="HNp-yv-0AQ"/>
                 <outlet property="chiTieuLable" destination="iNU-6W-og5" id="Zki-xn-BS5"/>
                 <outlet property="historyTableView" destination="Ksm-26-okp" id="gBm-s2-RUd"/>
                 <outlet property="soDuLable" destination="n25-0a-6bv" id="63c-RU-vAr"/>
@@ -25,12 +26,6 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FOj-rZ-zVm">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Calendar" translatesAutoresizingMaskIntoConstraints="NO" id="51F-iJ-ErI">
-                            <rect key="frame" x="16" y="0.0" width="382" height="265"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="265" id="d7v-IB-Ef8"/>
-                            </constraints>
-                        </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Efg-Yo-lQP">
                             <rect key="frame" x="16" y="281" width="382" height="48"/>
                             <subviews>
@@ -128,19 +123,26 @@
                             <rect key="frame" x="0.0" y="345" width="414" height="473"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUX-fM-l2Z" customClass="FSCalendar">
+                            <rect key="frame" x="16" y="0.0" width="382" height="265"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="265" id="IJ4-hR-x04"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="Efg-Yo-lQP" secondAttribute="trailing" constant="16" id="CEV-sF-afa"/>
-                        <constraint firstItem="51F-iJ-ErI" firstAttribute="top" secondItem="FOj-rZ-zVm" secondAttribute="top" id="CNK-ft-YJV"/>
                         <constraint firstItem="Ksm-26-okp" firstAttribute="leading" secondItem="FOj-rZ-zVm" secondAttribute="leading" id="NPV-k4-MCr"/>
                         <constraint firstItem="Ksm-26-okp" firstAttribute="top" secondItem="Efg-Yo-lQP" secondAttribute="bottom" constant="16" id="Nr4-ze-E1w"/>
-                        <constraint firstItem="Efg-Yo-lQP" firstAttribute="top" secondItem="51F-iJ-ErI" secondAttribute="bottom" constant="16" id="R0j-78-hnV"/>
+                        <constraint firstItem="WUX-fM-l2Z" firstAttribute="top" secondItem="FOj-rZ-zVm" secondAttribute="top" id="OPy-R7-kD7"/>
+                        <constraint firstItem="Efg-Yo-lQP" firstAttribute="top" secondItem="WUX-fM-l2Z" secondAttribute="bottom" constant="16" id="Olt-b4-imd"/>
                         <constraint firstAttribute="trailing" secondItem="Ksm-26-okp" secondAttribute="trailing" id="SU8-x0-uph"/>
                         <constraint firstItem="Efg-Yo-lQP" firstAttribute="leading" secondItem="FOj-rZ-zVm" secondAttribute="leading" constant="16" id="WU4-Lc-2zs"/>
-                        <constraint firstItem="51F-iJ-ErI" firstAttribute="leading" secondItem="FOj-rZ-zVm" secondAttribute="leading" constant="16" id="ZHK-vO-jPI"/>
-                        <constraint firstAttribute="trailing" secondItem="51F-iJ-ErI" secondAttribute="trailing" constant="16" id="lcj-tg-04M"/>
+                        <constraint firstAttribute="trailing" secondItem="WUX-fM-l2Z" secondAttribute="trailing" constant="16" id="oxk-Gn-3xS"/>
                         <constraint firstAttribute="bottom" secondItem="Ksm-26-okp" secondAttribute="bottom" id="p15-rx-VxO"/>
+                        <constraint firstItem="WUX-fM-l2Z" firstAttribute="leading" secondItem="FOj-rZ-zVm" secondAttribute="leading" constant="16" id="zPq-gL-Vo9"/>
                     </constraints>
                 </view>
             </subviews>
@@ -156,7 +158,6 @@
         </view>
     </objects>
     <resources>
-        <image name="Calendar" width="348" height="295"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
