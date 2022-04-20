@@ -17,7 +17,7 @@ class TabBarViewController: UITabBarController {
         planningVC.tabBarItem = UITabBarItem(title: "Vay nợ", image: UIImage(named: "give-money"), selectedImage: UIImage(named: "give-money"))
 
         let reportVC = ReportViewController()
-        reportVC.tabBarItem = UITabBarItem(title: "Báo cáo", image: UIImage(named: "baocaoicon"), selectedImage: UIImage(named: "tapbaocaoicon"))
+        reportVC.tabBarItem = UITabBarItem(title: "Báo cáo", image: UIImage(named: "baocaoicon"), selectedImage: UIImage(named: "baocaoicon"))
         
         let accountVC = AccountViewController()
         accountVC.delegate = self
@@ -52,7 +52,7 @@ class TabBarViewController: UITabBarController {
         }))
 
         button.configuration?.cornerStyle = .capsule
-        button.setImage(UIImage(named: "add-button-1"), for: .normal)
+        button.setImage(UIImage(named: "add-button"), for: .normal)
         
         view.addSubview(button)
         

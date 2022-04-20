@@ -14,7 +14,7 @@ class ChiTieuViewController: UIViewController {
     var datePicker = UIDatePicker()
     let data = ["Ăn uống", "Điện", "Nước", "Nhà", "Đi lại", "Khác"]
     let img = [
-        UIImage(named: "restaurant"),
+        UIImage(named: "eating"),
         UIImage(named: "electric"),
         UIImage(named: "water"),
         UIImage(named: "home"),
