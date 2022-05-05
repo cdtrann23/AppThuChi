@@ -33,7 +33,7 @@
                                         <constraint firstAttribute="height" constant="320" id="Qrl-1m-bFj"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peN-ER-Acj">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đăng nhập" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peN-ER-Acj">
                                     <rect key="frame" x="16" y="336" width="343" height="27.666666666666686"/>
                                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="24"/>
                                     <color key="textColor" name="Primary500"/>
@@ -49,11 +49,10 @@
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain">
                                         <attributedString key="attributedTitle">
-                                            <fragment content="Login">
+                                            <fragment content="Đăng nhập">
                                                 <attributes>
-                                                    <color key="NSColor" red="0.99732620320855614" green="0.99465240641711228" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="NSColor" red="1" green="0.99997597930000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <font key="NSFont" size="18" name="Helvetica-Bold"/>
-                                                    <font key="NSOriginalFont" size="18" name="Inter-Regular_ExtraBold"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -71,7 +70,7 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YL0-eo-jE8">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YL0-eo-jE8">
                                     <rect key="frame" x="16" y="467.66666666666669" width="343" height="44"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="44" id="fAJ-1h-nx7"/>
@@ -82,11 +81,10 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysv-MI-5YW">
                                     <rect key="frame" x="102" y="643.66666666666663" width="171" height="19"/>
                                     <attributedString key="attributedText">
-                                        <fragment content="Don't have an account?">
+                                        <fragment content="Chưa có tài khoản?">
                                             <attributes>
                                                 <color key="NSColor" red="0.36006167529999999" green="0.41368415949999998" blue="0.66669404509999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <font key="NSFont" size="16" name="Inter-Regular"/>
-                                                <font key="NSOriginalFont" size="16" name="Inter-Regular"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -94,14 +92,14 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HW1-Y3-H42">
-                                    <rect key="frame" x="128.66666666666666" y="662.66666666666663" width="118" height="33"/>
+                                    <rect key="frame" x="124.66666666666669" y="662.66666666666663" width="126" height="33"/>
                                     <color key="tintColor" red="0.36006167529999999" green="0.41368415949999998" blue="0.66669404509999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain">
                                         <attributedString key="attributedTitle">
-                                            <fragment content="Register now">
+                                            <fragment content="Đăng ký ngay!">
                                                 <attributes>
-                                                    <color key="NSColor" red="0.36006167529999999" green="0.41368415949999998" blue="0.66669404509999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="NSColor" red="0.3676638901" green="0.42203301189999998" blue="0.65884965660000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <font key="NSFont" size="16" name="Inter-Regular_Black"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>

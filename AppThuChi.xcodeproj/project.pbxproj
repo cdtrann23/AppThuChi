@@ -13,6 +13,7 @@
 		3A0BC2BF280A6F2300893991 /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A0BC2BD280A6F2300893991 /* HeaderTableViewCell.xib */; };
 		3A0BC2C2280A6F8700893991 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0BC2C0280A6F8700893991 /* TableViewCell.swift */; };
 		3A0BC2C3280A6F8700893991 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A0BC2C1280A6F8700893991 /* TableViewCell.xib */; };
+		3A2B2F442823AE8300CBE09A /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A2B2F432823AE8300CBE09A /* Image.xcassets */; };
 		3A4DFD4E28100A8900333B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A4DFD4D28100A8900333B38 /* Assets.xcassets */; };
 		3A4DFD502811268900333B38 /* getImgCategoryName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4DFD4F2811268900333B38 /* getImgCategoryName.swift */; };
 		3A65AA3527FD436B0022476B /* PlanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A65AA3327FD436B0022476B /* PlanningViewController.swift */; };
@@ -52,6 +53,7 @@
 		3A0BC2BD280A6F2300893991 /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
 		3A0BC2C0280A6F8700893991 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3A0BC2C1280A6F8700893991 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		3A2B2F432823AE8300CBE09A /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		3A4DFD4D28100A8900333B38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A4DFD4F2811268900333B38 /* getImgCategoryName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getImgCategoryName.swift; sourceTree = "<group>"; };
 		3A65AA3327FD436B0022476B /* PlanningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,43 @@
 			path = BottomSheet;
 			sourceTree = "<group>";
 		};
+		3A2B2F412823ABD800CBE09A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3A72576F27F4F1EF006944D7 /* ReportScreen */,
+				3A72577027F4F210006944D7 /* PlanningScreen */,
+				3A72576E27F4F105006944D7 /* AccountScreen */,
+				3A72577127F4F267006944D7 /* TabBar */,
+				3A13009227F71B2D00B856D7 /* BottomSheet */,
+				3A72576627F4ECA1006944D7 /* HomeScreen */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3A2B2F422823AE6D00CBE09A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B2F462823AECE00CBE09A /* Font */,
+				3A2B2F452823AEB000CBE09A /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3A2B2F452823AEB000CBE09A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3A2B2F432823AE8300CBE09A /* Image.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		3A2B2F462823AECE00CBE09A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		3A7256D427F499F8006944D7 = {
 			isa = PBXGroup;
 			children = (
@@ -155,21 +194,16 @@
 		3A7256DF27F499F9006944D7 /* AppThuChi */ = {
 			isa = PBXGroup;
 			children = (
+				3A2B2F422823AE6D00CBE09A /* Resources */,
 				3A7256E027F499F9006944D7 /* AppDelegate.swift */,
 				3A7256E227F499F9006944D7 /* SceneDelegate.swift */,
-				3A13009227F71B2D00B856D7 /* BottomSheet */,
-				3A72576627F4ECA1006944D7 /* HomeScreen */,
-				3A72575627F4DBCF006944D7 /* Login&Register */,
-				3A72577127F4F267006944D7 /* TabBar */,
+				3A2B2F412823ABD800CBE09A /* Scenes */,
 				3A7256EB27F499FC006944D7 /* LaunchScreen.storyboard */,
 				3A7256EE27F499FC006944D7 /* Info.plist */,
 				3A4DFD4D28100A8900333B38 /* Assets.xcassets */,
-				3A72576E27F4F105006944D7 /* AccountScreen */,
 				3A72576B27F4ED3E006944D7 /* Helpers */,
 				3A72575A27F4DC6D006944D7 /* ManagerFirebases */,
 				3A72575727F4DBE6006944D7 /* Libraries */,
-				3A72577027F4F210006944D7 /* PlanningScreen */,
-				3A72576F27F4F1EF006944D7 /* ReportScreen */,
 				3A72575B27F4DC9E006944D7 /* DontUse */,
 			);
 			path = AppThuChi;
@@ -215,6 +249,7 @@
 		3A72576627F4ECA1006944D7 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				3A72575627F4DBCF006944D7 /* Login&Register */,
 				3A0BC2BB280A6ED800893991 /* TableViewCell */,
 				3A72576727F4ECBE006944D7 /* HomeViewController.swift */,
 				3A72576827F4ECBE006944D7 /* HomeViewController.xib */,
@@ -368,6 +403,7 @@
 				3A4DFD4E28100A8900333B38 /* Assets.xcassets in Resources */,
 				3A0BC2C3280A6F8700893991 /* TableViewCell.xib in Resources */,
 				3A65AA3627FD436B0022476B /* PlanningViewController.xib in Resources */,
+				3A2B2F442823AE8300CBE09A /* Image.xcassets in Resources */,
 				3A72576A27F4ECBE006944D7 /* HomeViewController.xib in Resources */,
 				3A93DC6A280811FC0002617F /* ChiTieuCollectionViewCell.xib in Resources */,
 				3A72577927F4F340006944D7 /* AccountViewController.xib in Resources */,

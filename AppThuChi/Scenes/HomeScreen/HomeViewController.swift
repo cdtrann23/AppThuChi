@@ -2,6 +2,7 @@ import UIKit
 import FirebaseFirestore
 import Foundation
 import FSCalendar
+import FirebaseAuth
 
 class HomeViewController: UIViewController {
     
@@ -121,14 +122,19 @@ class HomeViewController: UIViewController {
         }
         
     }
+    
+    
     func getDate(){
         for item in allData {
             //            if arrDate.contains(where: { $0 = item.date }) {}
-            if !arrDate.contains(where: { date in
-                item.date == date
-            }){
-                arrDate.append(item.date)
-                
+            
+            if item.creatorId == Auth.auth().currentUser?.uid {
+                if !arrDate.contains(where: { date in
+                    item.date == date
+                }){
+                    arrDate.append(item.date)
+                    
+                }
             }
         }
         

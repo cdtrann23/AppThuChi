@@ -26,14 +26,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
         
     }
-
-
 }
 
 extension AppDelegate {
     private func configIQKeyBoard() {
         IQKeyboardManager.shared.enable = true
-        IQKeyboardManager.shared.keyboardDistanceFromTextField = 16
+//        IQKeyboardManager.shared.keyboardDistanceFromTextField = 50
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        
     }
 }
 

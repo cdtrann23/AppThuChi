@@ -1,39 +1,43 @@
 import UIKit
 import FirebaseFirestore
 
-class ThuNhapViewController: UIViewController {
+class ChiTieuViewController: UIViewController {
 
+    @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var noteTextField: UITextField!
     @IBOutlet weak var moneyTextField: UITextField!
-    @IBOutlet weak var dateTextField: UITextField!
     @IBOutlet weak var danhMucTextField: UITextField!
+    @IBOutlet weak var saveButton: UIButton!
     
     @IBOutlet weak var danhMucCollectionView: UICollectionView!
     @IBOutlet weak var anhDanhMuc: UIImageView!
     
+            
+    
+    
     var datePicker = UIDatePicker()
-    let data = ["Lương", "Thưởng", "Trợ cấp", "Lì xì", "Đầu tư"]
+    let data = ["Ăn uống", "Điện", "Nước", "Nhà", "Đi lại", "Khác"]
     let img = [
-        UIImage(named: "Luong"),
-        UIImage(named: "Thuong"),
-        UIImage(named: "Trocap"),
-        UIImage(named: "Lixi"),
-        UIImage(named: "Dautu")
+        UIImage(named: "eating"),
+        UIImage(named: "electric"),
+        UIImage(named: "water"),
+        UIImage(named: "home"),
+        UIImage(named: "gas"),
+        UIImage(named: "more")
     ]
-
+    
     let insetSection = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
     let itemPerRow: CGFloat = 3.0
     
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .systemCyan
         danhMucCollectionView.delegate = self
         danhMucCollectionView.dataSource = self
         danhMucCollectionView.register(UINib(nibName: "ChiTieuCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "Cell")
         createDatePicker()
+        saveButton.layer.cornerRadius = 8
     }
     
     @IBAction func saveButton(_ sender: Any) {
@@ -45,16 +49,17 @@ class ThuNhapViewController: UIViewController {
             return
         }
         
-        let thunhap = ThuNhap(id: UUID().uuidString,
-                              money: Float(money) ?? 0.0,
+        let chitieu = ChiTieu(id: UUID().uuidString,
+                              money: (Float(money) ?? 0.0) * -1,
                               danhMuc: danhMuc,
                               note: note,
                               date: date,
                               creatorId: UserDefaults.standard.string(forKey: "uid") ?? "")
         let database = FirebaseFirestore.Firestore.firestore()
-        database.collection("ThuNhap").addDocument(data: thunhap.dictionary)
+        database.collection("ChiTieu").addDocument(data: chitieu.dictionary)
         self.dismiss(animated: true, completion: nil)
     }
+    
     
     func createDatePicker(){
         
@@ -86,7 +91,7 @@ class ThuNhapViewController: UIViewController {
     }
 }
 
-extension ThuNhapViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension ChiTieuViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         data.count
@@ -95,9 +100,11 @@ extension ThuNhapViewController: UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! ChiTieuCollectionViewCell
 
+        
         cell.tenDanhMuc.text = data[indexPath.row]
         cell.anhDanhMucCell.image = img[indexPath.row]
         
+
         return cell
 
     }
@@ -120,7 +127,6 @@ extension ThuNhapViewController: UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 8
     }
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 8
     }
@@ -130,5 +136,4 @@ extension ThuNhapViewController: UICollectionViewDelegate, UICollectionViewDataS
         danhMucTextField.text = selectedData
         anhDanhMuc.image = img[indexPath.row]
     }
-    
 }

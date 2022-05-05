@@ -22,6 +22,7 @@
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="W2n-HP-gLZ" customClass="TabySegmentedControl" customModule="AppThuChi" customModuleProvider="target">
                                 <rect key="frame" x="16" y="100" width="343" height="53"/>
+                                <color key="backgroundColor" red="0.820468843" green="0.86934924130000002" blue="0.93726545569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="8kb-3Y-OXO"/>
                                 </constraints>
@@ -38,7 +39,8 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Thêm giao dịch">
                                         <attributes>
-                                            <font key="NSFont" size="24" name="Inter-Regular_SemiBold"/>
+                                            <color key="NSColor" red="1" green="0.99997597930000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="24" name="Helvetica-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -47,7 +49,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="0.820468843" green="0.86934924130000002" blue="0.93726545569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.3676638901" green="0.42203301189999998" blue="0.65884965660000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="c3G-Gf-KP1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="2xT-d2-vtz"/>
                             <constraint firstItem="c3G-Gf-KP1" firstAttribute="top" secondItem="W2n-HP-gLZ" secondAttribute="bottom" constant="14" id="KGu-KH-2Nu"/>
@@ -86,7 +88,7 @@
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="v8k-DD-VLJ">
                                                 <rect key="frame" x="72" y="160.33333333333334" width="287" height="96.000000000000028"/>
-                                                <color key="backgroundColor" red="0.67059749359999998" green="0.67057168479999996" blue="0.670589149" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.820468843" green="0.86934924130000002" blue="0.93726545569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="96" id="ieI-fi-klv"/>
                                                 </constraints>
@@ -149,7 +151,7 @@
                                                     <constraint firstAttribute="height" constant="44" id="fFb-wE-0Xe"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yq8-25-a8L">
                                                 <rect key="frame" x="72" y="332.33333333333331" width="287" height="44"/>
@@ -258,6 +260,7 @@
                         <outlet property="dateTextField" destination="Yq8-25-a8L" id="Wy7-Tx-qD8"/>
                         <outlet property="moneyTextField" destination="kjj-Ve-D67" id="DA0-Pc-t1m"/>
                         <outlet property="noteTextField" destination="usV-Xo-Jwq" id="Vh4-a8-11q"/>
+                        <outlet property="saveButton" destination="dxJ-1c-VXd" id="Nos-zg-ntf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uMg-sD-4WZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -280,7 +283,7 @@
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jXK-3V-DQ6">
                                                 <rect key="frame" x="72" y="160.33333333333334" width="287" height="96.000000000000028"/>
-                                                <color key="backgroundColor" red="0.67059749359999998" green="0.67057168479999996" blue="0.670589149" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.820468843" green="0.86934924130000002" blue="0.93726545569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="96" id="jc1-gb-esB"/>
                                                 </constraints>
@@ -343,7 +346,7 @@
                                                     <constraint firstAttribute="height" constant="44" id="hDa-Xx-Xdv"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dak-xM-TH9">
                                                 <rect key="frame" x="72" y="332.33333333333331" width="287" height="44"/>
@@ -452,6 +455,7 @@
                         <outlet property="dateTextField" destination="dak-xM-TH9" id="IS8-ez-cfZ"/>
                         <outlet property="moneyTextField" destination="A8B-Pw-E69" id="Gcz-30-MI0"/>
                         <outlet property="noteTextField" destination="ID7-Mb-O4r" id="MzQ-J5-sTj"/>
+                        <outlet property="saveButton" destination="fzZ-O4-WSe" id="OVD-Mt-9cb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fzx-qr-daP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
