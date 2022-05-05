@@ -52,6 +52,7 @@ class ChiTieuViewController: UIViewController {
                               creatorId: UserDefaults.standard.string(forKey: "uid") ?? "")
         let database = FirebaseFirestore.Firestore.firestore()
         database.collection("ChiTieu").addDocument(data: chitieu.dictionary)
+        self.dismiss(animated: true, completion: nil)
     }
     
     
@@ -59,6 +60,7 @@ class ChiTieuViewController: UIViewController {
         
         //datePicker = UIDatePicker()
         datePicker.datePickerMode = .date
+        datePicker.locale = Locale(identifier: "vi_VN")
         datePicker.addTarget(self, action: #selector(dateChanged(datePicker:)), for: UIControl.Event.valueChanged)
         datePicker.frame.size = CGSize(width: 0, height: 300)
         datePicker.preferredDatePickerStyle = .wheels
@@ -78,6 +80,7 @@ class ChiTieuViewController: UIViewController {
     
     func formatDate(date: Date) -> String {
         let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "vi_VN")
         formatter.dateFormat = "EEEE, d MMM yyyy"
         return formatter.string(from: date)
     }

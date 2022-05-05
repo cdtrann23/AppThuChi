@@ -8,17 +8,14 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var historyTableView: UITableView!
     @IBOutlet weak var calendar: FSCalendar!
     
-    let header = HeaderTableViewCell()
     @IBOutlet weak var thuNhapLable: UILabel!
     @IBOutlet weak var chiTieuLable: UILabel!
     @IBOutlet weak var soDuLable: UILabel!
-    var sumThuNhap: Float = 0
-    var sumChiTieu: Float = 0
-
+    
+    
     
     let database = FirebaseFirestore.Firestore.firestore()
     var arrChitieu: [[ChiTieu]] = []
-    var arrThunhap: [[ThuNhap]] = []
     var allData = [ChiTieu]()
     var arrDate = [String]()
     
@@ -39,16 +36,18 @@ class HomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: true)
+        
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         getAllData()
-        
-        
     }
     
     func getAllData(){
         arrChitieu.removeAll()
         allData.removeAll()
         arrDate.removeAll()
-        arrThunhap.removeAll()
         
         var isGetThu = false
         var isGetChi = false
@@ -143,6 +142,31 @@ class HomeViewController: UIViewController {
             arrChitieu.append(arrItemInDate)
         }
         historyTableView.reloadData()
+        upDateUI()
+    }
+    
+    func upDateUI(){
+        var thuNhap: Double = 0
+        var chiTieu: Double = 0
+        var soDuCuoi: Double = 0
+        
+        for i in arrChitieu {
+            for j in i {
+                if j.money > 0 {
+                    thuNhap += Double(j.money)
+                }
+                
+                if j.money < 0 {
+                    chiTieu += Double(j.money)
+                }
+                
+            }
+        }
+        soDuCuoi = thuNhap + chiTieu
+        thuNhapLable.text = "\(thuNhap)"
+        chiTieuLable.text = "\(chiTieu)"
+        chiTieuLable.textColor = .red
+        soDuLable.text = "\(soDuCuoi)"
     }
 }
 
@@ -160,28 +184,16 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
-        //arrChitieu[indexPath.section][indexPath.row]
         
+        cell.data = arrChitieu[indexPath.section][indexPath.row]
         
-        cell.tenDanhMuc.text = arrChitieu[indexPath.section][indexPath.row].danhMuc
-        cell.note.text = arrChitieu[indexPath.section][indexPath.row].note
-        cell.money.text = String(arrChitieu[indexPath.section][indexPath.row].money)
-        if arrChitieu[indexPath.section][indexPath.row].money < 0 {
-            cell.money.text = String(arrChitieu[indexPath.section][indexPath.row].money)
-            sumChiTieu += arrChitieu[indexPath.section][indexPath.row].money
-            cell.money.textColor = .red
-        }
-        //            else {
-        //            sumThuNhap += arrChitieu[indexPath.section][indexPath.row].money
-        //
-        //        }
         return cell
     }
     
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        var Tong: Float = 0
+        
         
         let headerView = UIView()
         let headerCell = tableView.dequeueReusableCell(withIdentifier: "Header") as! HeaderTableViewCell
@@ -197,9 +209,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         headerCell.datenumberLabel.text = datearr[1]
         headerCell.monthLabel.text = "Tháng \(datearr[3]) năm \(datearr[4])"
         
-        //headerCell.monthLabel.text = arrDate[section]
-        headerCell.sumOfDay.text = String(Tong)
-        //thuNhapLable.text = String(sumThuNhap)
+        
+        var sumOfDate: Float = 0
+        for i in arrChitieu[section] {
+            sumOfDate += i.money
+        }
+        
+        headerCell.sumOfDay.text = String(sumOfDate)
+        
         headerView.addSubview(headerCell)
         
         return headerView

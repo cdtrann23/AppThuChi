@@ -1,10 +1,10 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.tabBar.tintColor = UIColor(named: "TabbarIconColor")
         //self.tabBar.barTintColor = .clear
         self.tabBar.backgroundColor = UIColor(named: "Ink800")
@@ -15,32 +15,19 @@ class TabBarViewController: UITabBarController {
         
         let planningVC = PlanningViewController()
         planningVC.tabBarItem = UITabBarItem(title: "Vay nợ", image: UIImage(named: "give-money"), selectedImage: UIImage(named: "give-money"))
-
+        
         let reportVC = ReportViewController()
-        reportVC.tabBarItem = UITabBarItem(title: "Báo cáo", image: UIImage(named: "baocaoicon"), selectedImage: UIImage(named: "baocaoicon"))
+        reportVC.tabBarItem = UITabBarItem(title: "Báo cáo", image: UIImage(named: "fluctuation"), selectedImage: UIImage(named: "fluctuation"))
         
         let accountVC = AccountViewController()
         accountVC.delegate = self
-        accountVC.tabBarItem = UITabBarItem(title: "Tài khoản", image: UIImage(named: "user"), selectedImage: UIImage(named: "user"))
+        accountVC.tabBarItem = UITabBarItem(title: "Tài khoản", image: UIImage(named: "account"), selectedImage: UIImage(named: "account"))
         
         let add = UIViewController()
         add.tabBarItem = UITabBarItem(title: "Thêm", image: UIImage(named: ""), selectedImage: UIImage(named: ""))
         
         self.viewControllers = [homeVC, reportVC, add, planningVC,accountVC]
         
-//        view.addSubview(button)
-//
-//        let margins = view.layoutMarginsGuide
-//
-//        button.translatesAutoresizingMaskIntoConstraints = false
-//        button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-//        button.bottomAnchor.constraint(equalTo: margins.bottomAnchor, constant: -15).isActive = true
-//
-//        button.heightAnchor.constraint(equalToConstant: 50).isActive = true
-//        button.widthAnchor.constraint(equalToConstant: 50).isActive = true
-//
-//        button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
-
         let button = UIButton(configuration: .filled(), primaryAction: .init(handler: { _ in
             let storyboard = UIStoryboard(name: "Bottom", bundle: nil)
             let a = storyboard.instantiateViewController(withIdentifier: "BottomViewController") as! BottomViewController
@@ -48,9 +35,9 @@ class TabBarViewController: UITabBarController {
             
             self.present(a, animated: true, completion: nil)
             
-
+            
         }))
-
+        
         button.configuration?.cornerStyle = .capsule
         button.setImage(UIImage(named: "add-button"), for: .normal)
         

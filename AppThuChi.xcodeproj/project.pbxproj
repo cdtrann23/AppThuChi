@@ -14,6 +14,7 @@
 		3A0BC2C2280A6F8700893991 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0BC2C0280A6F8700893991 /* TableViewCell.swift */; };
 		3A0BC2C3280A6F8700893991 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A0BC2C1280A6F8700893991 /* TableViewCell.xib */; };
 		3A4DFD4E28100A8900333B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A4DFD4D28100A8900333B38 /* Assets.xcassets */; };
+		3A4DFD502811268900333B38 /* getImgCategoryName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4DFD4F2811268900333B38 /* getImgCategoryName.swift */; };
 		3A65AA3527FD436B0022476B /* PlanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A65AA3327FD436B0022476B /* PlanningViewController.swift */; };
 		3A65AA3627FD436B0022476B /* PlanningViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A65AA3427FD436B0022476B /* PlanningViewController.xib */; };
 		3A65AA3927FD43990022476B /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A65AA3727FD43990022476B /* ReportViewController.swift */; };
@@ -52,6 +53,7 @@
 		3A0BC2C0280A6F8700893991 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3A0BC2C1280A6F8700893991 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		3A4DFD4D28100A8900333B38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A4DFD4F2811268900333B38 /* getImgCategoryName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getImgCategoryName.swift; sourceTree = "<group>"; };
 		3A65AA3327FD436B0022476B /* PlanningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanningViewController.swift; sourceTree = "<group>"; };
 		3A65AA3427FD436B0022476B /* PlanningViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanningViewController.xib; sourceTree = "<group>"; };
 		3A65AA3727FD43990022476B /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				3A72576C27F4ED67006944D7 /* AlertHelpers.swift */,
+				3A4DFD4F2811268900333B38 /* getImgCategoryName.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A65AA3927FD43990022476B /* ReportViewController.swift in Sources */,
+				3A4DFD502811268900333B38 /* getImgCategoryName.swift in Sources */,
 				3A7D14E42807244E00423270 /* TabySegmentedControl.swift in Sources */,
 				3A72576027F4DDED006944D7 /* LoginViewController.swift in Sources */,
 				3A93DC69280811FC0002617F /* ChiTieuCollectionViewCell.swift in Sources */,
